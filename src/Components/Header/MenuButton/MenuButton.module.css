@@ -1,0 +1,43 @@
+.m_button {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    background-color: #222222;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    box-shadow: -3px -3px 7px 0px #363636, -2px -2px 3px 0px #363636,
+        3px 3px 7px 0px #0e0e0e, 2px 2px 3px 0px #0e0e0e, inset 0px 0px 0px 0px #363636,
+        inset 0px 0px 0px 0px #0e0e0e, inset 0px 0px 0px 0px #363636,
+        inset 0px 0px 0px 0px #0e0e0e;
+    transition: box-shadow 0.1s cubic-bezier(0.79, 0.21, 0.06, 0.81);
+}
+
+
+.m_button span {
+    background-color:rgb(255, 49, 49);
+    box-shadow: 0px 0px 5px 0px rgba(255, 122, 122, 0.3);
+    width: 30px;
+    height: 4px;
+    border-radius: 4px;
+    margin: 3px 0px 3px 0px;
+    transition: margin 0.1s cubic-bezier(0.79, 0.21, 0.06, 0.81),
+        transform 0.1s cubic-bezier(0.79, 0.21, 0.06, 0.81);
+}
+
+.active span {
+    margin: -2px;
+}
+
+.active {
+    background: #222222;
+     box-shadow: inset 5px 5px 10px #0e0e0e,
+     inset -5px -5px 10px #363636;
+}
+
+
+

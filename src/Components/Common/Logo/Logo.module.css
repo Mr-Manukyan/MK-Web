@@ -1,0 +1,38 @@
+.wrapper {
+    width: 65px;
+    height: 65px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(145deg, #1f1f1f, #252525);
+    box-shadow: -3px -3px 7px 0px #363636, -2px -2px 3px 0px #363636,
+            3px 3px 7px 0px #0e0e0e, 2px 2px 3px 0px #0e0e0e, inset 0px 0px 0px 0px #363636,
+            inset 0px 0px 0px 0px #0e0e0e, inset 0px 0px 0px 0px #363636,
+            inset 0px 0px 0px 0px #0e0e0e;
+}
+
+
+.logo {
+    width: 55px;
+    height: 60px;
+    object-fit: cover;
+}
+
+@media screen and (max-width:767px) {
+.wrapper {
+        width: 75px;
+        height: 75px;
+        border-radius: 100%;
+      
+    }
+
+.logo {
+    width: 58px;
+    height: 63px;
+    object-fit: cover;
+}
+
+}
+
+

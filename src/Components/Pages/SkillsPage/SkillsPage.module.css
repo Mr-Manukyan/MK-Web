@@ -1,0 +1,193 @@
+.container {
+    width: 100%;
+    height: 87vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+
+}
+
+
+.mainWrapper {
+    width: 98%;
+    height: 98%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    /* padding: 20px; */
+    border-radius: 18px;
+    background: #222222;
+    box-shadow: inset 5px 5px 10px #0e0e0e, inset -5px -5px 10px #363636;
+       
+}
+
+.skillsParagraphWrapper{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skillsParagraph{
+    font-size: 25px;
+    padding: 10px 25px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.171);
+    font-family: 'Poppins', sans-serif;
+    color: #222222;
+    letter-spacing: 3px;
+    font-weight: 700;
+    text-shadow:
+        -1px -1px 2px #ffffff,
+        1px 1px 2px #0e0e0e;
+}
+
+.skillsContentWrapper{
+overflow-y: auto;
+scroll-snap-type: y mandatory;
+padding:5px 0px;
+}
+
+.skillsContent {
+    width: 95%;
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+
+}
+
+.technicalSkillsContent{
+    width: 47%;
+    height: 96%;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(145deg, #1f1f1f, #252525);
+    box-shadow: -3px -3px 7px 0px #363636, -2px -2px 3px 0px #363636,
+            3px 3px 7px 0px #0e0e0e, 2px 2px 3px 0px #0e0e0e, inset 0px 0px 0px 0px #363636,
+            inset 0px 0px 0px 0px #0e0e0e, inset 0px 0px 0px 0px #363636,
+            inset 0px 0px 0px 0px #0e0e0e;
+  
+
+}
+.professionalSkillsContent {
+    width: 47%;
+    height: 96%;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(145deg, #1f1f1f, #252525);
+    box-shadow: -3px -3px 7px 0px #363636, -2px -2px 3px 0px #363636,
+            3px 3px 7px 0px #0e0e0e, 2px 2px 3px 0px #0e0e0e, inset 0px 0px 0px 0px #363636,
+            inset 0px 0px 0px 0px #0e0e0e, inset 0px 0px 0px 0px #363636,
+            inset 0px 0px 0px 0px #0e0e0e;
+
+}
+
+.paragraph{
+   color: rgb(155, 155, 155);
+   font-size: calc(17px + 3 * ((100vw - 320px) / (1280 - 320)));
+   letter-spacing: 2px;
+   font-weight: 500;
+   margin-top: 10px;
+   padding-bottom: 3px;
+   border-bottom: 1px solid rgb(255, 49, 49);
+}
+
+.technicalSkillsWrapper{
+    width:85%;
+    height: 93%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+/* .skillsContent::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+    height: 0;
+}
+
+.skillsContent::-webkit-scrollbar-thumb {
+    background: transparent
+}
+
+.skillsContent::-webkit-scrollbar-track {
+    background: transparent;
+} */
+
+
+@media screen and (max-width:767px) {
+.mainWrapper {
+        width: 96%;
+        height: 95%;
+        padding: 10px 0px;
+    }
+
+.skillsContentWrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+
+.skillsParagraph {
+    font-size: 20px;
+    padding: 7px 20px;
+    border-radius: 5px;
+}
+.skillsContent {
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+.skillsParagraphWrapper {
+    margin-bottom: 7px;
+} 
+
+.technicalSkillsContent {
+    width: 90%;
+    min-height:100%;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    scroll-snap-align:center;
+    border: 2px solid #363636;
+    margin-bottom:20px;
+
+}
+
+.professionalSkillsContent {
+    width: 90%;
+    min-height: 101%;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #363636;
+    scroll-snap-align: center;
+ 
+}
+
+
+}

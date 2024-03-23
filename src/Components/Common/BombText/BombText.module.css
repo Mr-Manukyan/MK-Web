@@ -1,0 +1,67 @@
+.bump {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    background-color: #222222;
+    box-shadow:
+        4px 4px 4px 0 #424242 inset,
+        -3px -3px 10px 0 rgba(0, 0, 0, .25) inset;
+    cursor: pointer;
+    animation-name: pressed;
+    /* animation-duration: 1s; */
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+/* .char{
+    font-family: 'Poppins', sans-serif;
+    font-size:24px;
+    color: #222222;;
+    font-weight: 500;
+    text-shadow:
+        -1px -1px 2px #363636,
+        1px 1px 2px #0e0e0e;
+    caret-color: #262626;
+    animation-name: scaleText;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+} */
+
+@keyframes scaleText {
+    0% {
+       transform: scale(1.2);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+     transform: scale(0.9);
+    }
+}
+
+@keyframes pressed {
+    0% {
+    
+        box-shadow:
+                4px 4px 4px 0 #424242 inset,
+                -3px -3px 10px 0 rgba(0, 0, 0, .25) inset;
+    }
+
+    50% {
+              box-shadow: 4px 4px 4px 0 #424242 inset,
+                -3px -3px 10px 0 rgba(0, 0, 0, .25) inset;
+    
+       }
+
+    100% {
+        box-shadow: inset 5px 5px 10px #0e0e0e, inset -5px -5px 10px #363636;
+        
+    }
+}

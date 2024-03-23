@@ -1,0 +1,234 @@
+.mainContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+
+}
+
+.leftContent {
+    width: 48.5%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 18px;
+    background: #222222;
+    box-shadow: inset 5px 5px 10px #0e0e0e, inset -5px -5px 10px #363636;
+}
+
+.leftContentWrapper{
+    width:100%;
+    height: 35%;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+.nameWrapper{
+    /* width: 80%; */
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.infoName {
+    color: rgb(230, 230, 230);
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.name {
+    background-color: #040404;
+    color: rgb(230, 230, 230);
+    font-size: 35px;
+    text-align: center;
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+.professionWrapper{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+
+}
+.professionAnimeWrapper{
+   min-width: 300px;
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+   position: relative;
+
+}
+.profession {
+    display: flex;
+    align-items: center;
+    color: rgb(230, 230, 230);
+    font-size: 23px;
+    margin-right: 20px;
+}
+.textTypeing{
+    color:rgb(255, 49, 49);
+    font-size: 30px;
+    position: absolute;
+}
+/* .infoTextWrapper{
+    width: 100%;
+}
+.infoText {
+  font-size: 20px;
+  color: rgb(155, 155, 155);
+} */
+        
+/* 
+
+  font-size: calc(10px + 3 * ((100vw - 320px) / (1280 - 320))); */
+
+/* .leftContent p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 40px;
+        color: #222222;;
+        font-weight: 500;
+        text-shadow:
+            -3px -3px 5px #363636,
+            3px 3px 5px #0e0e0e;
+        caret-color: #262626;
+        word-spacing: 50px;
+        letter-spacing: 5px;
+} */
+
+.rightContent {
+    width: 48.5%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 18px;
+    background: #222222;
+    box-shadow: inset 5px 5px 10px #0e0e0e, inset -5px -5px 10px #363636;
+    position: relative;
+
+}
+
+.control {
+    width: 2%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.control::after {
+    content: '';
+    width: 4px;
+    height: 100%;
+    border-radius: 2px;
+    background: linear-gradient(145deg, #333333, #222222);
+    box-shadow: 1px 1px 2px #040404, -0.5px -0.5px 2px #929292;
+    overflow: hidden;
+}
+
+@media screen and (max-width:1049px) {
+ 
+
+.leftContentWrapper {
+        height: 30%;
+    }
+
+    .infoName {
+        font-size: 20px;
+    }
+
+    .name {
+        font-size: 25px;
+    }
+    .professionAnimeWrapper {
+        min-width: 200px;
+    }
+
+    .profession {
+        font-size: 20px;
+    }
+
+    .textTypeing {
+        color: rgb(255, 49, 49);
+        font-size: 20px;
+    }
+}
+
+   
+
+@media screen and (max-width:767px) {
+    .mainContainer {
+        display: flex;
+        flex-direction: column-reverse;
+
+    }
+
+    .leftContent {
+        width: 98%;
+        height: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .rightContent {
+        width: 98%;
+        height: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 2%;
+    }
+
+    .control {
+        display: none;
+    }
+
+
+    .leftContentWrapper {
+        width: 100%;
+        height: 100%;
+        align-items: center;
+    }
+
+    .nameWrapper {
+        margin-bottom: 10px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .infoName {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    .name {
+        font-size: 25px;
+    }
+ 
+        
+
+.profession {
+        font-size: 20px;
+        margin-right: 15px;
+    }
+ .textTypeing {
+     color: rgb(255, 49, 49);
+     font-size: 20px;
+ }
+
+}
