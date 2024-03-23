@@ -1,6 +1,7 @@
 import { Route, Routes, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 import { Header } from './Components/Header/Header';
+import { Footer } from './Components/Footer/Footer';
 import { HomePage } from './Components/Pages/HomePage/HomePage';
 import { AboutMePage } from './Components/Pages/AboutMePage/AboutMePage';
 import { SkillsPage } from './Components/Pages/SkillsPage/SkillsPage';
@@ -29,6 +30,7 @@ const App = () => {
           {/* <Route path='*' element={<NotFound />} /> */}
         </Routes>
       </AnimatePresence>
+      <Footer />
     </div>
   );
 }

@@ -48,10 +48,10 @@ export const Main = () => {
 
             <div className={style.rightContent}>
                 <UserAvatar />
-                <BombText left='20px' top='20px' delay={1} />
-                <BombText left='20px' bottom='20px' delay={1} />
-                <BombText right='20px' top='20px' delay={1} />
-                <BombText bottom='20px' right='20px' delay={1} />
+                <BombText left='20px' top='20px' />
+                <BombText left='20px' bottom='20px' />
+                <BombText right='20px' top='20px' />
+                <BombText bottom='20px' right='20px' />
             </div>
         </div>
     )

@@ -1,0 +1,80 @@
+/* CircularProgressBar.module.css */
+.container{
+    min-width: 110px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    background: #222222;
+    border-radius: 10px;
+    box-shadow: inset 5px 5px 10px #0e0e0e, inset -5px -5px 10px #363636;
+    margin: 10px;
+}
+.circleContainer {
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(145deg, #1f1f1f, #252525);
+    box-shadow: -1px -1px 3px 0px #363636, -1px -1px 2px 0px #363636,
+            1px 1px 3px 0px #0e0e0e, 1px 1px 2px 0px #0e0e0e, inset 0px 0px 0px 0px #363636,
+            inset 0px 0px 0px 0px #0e0e0e, inset 0px 0px 0px 0px #363636,
+            inset 0px 0px 0px 0px #0e0e0e;
+
+}
+
+.circleWrapper {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    text-align: center;
+    background: #222222;
+    border-radius: 100%;
+    box-shadow: inset 5px 5px 10px #0e0e0e, inset -5px -5px 10px #363636;
+}
+
+.svgCircle {
+
+}
+
+
+.pracentCircle {
+    fill: none;
+    stroke: #fd2a2a;
+    stroke-width: 6;
+    stroke-linecap: round;
+    stroke-dasharray: 283px;
+    transition: stroke-dashoffset 0.5s ease-in-out;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+}
+
+
+.pracent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: rgb(211, 211, 211);
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    background-color: #222222;
+    box-shadow: 2px 2px 4px #0e0e0e, -2px -2px 4px #363636,
+        inset 2px 2px 4px #0e0e0e, inset -2px -2px 4px #363636;
+  
+}
+
+.professionName{
+    margin-top: 5px;
+    font-size: 14px;
+    color: rgb(211, 211, 211);
+}

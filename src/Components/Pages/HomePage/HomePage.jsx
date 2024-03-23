@@ -1,5 +1,4 @@
 import { Main } from './Main/Main'
-import { Footer } from '../../Footer/Footer'
 import { AnimatedPage } from '../../Common/AnimatedPage/AnimatedPage'
 import style from './HomePage.module.css'
 
@@ -12,7 +11,6 @@ export const HomePage = () => {
                     <Main />
                 </div>
             </div>
-            <Footer />
         </AnimatedPage>
     )
 }

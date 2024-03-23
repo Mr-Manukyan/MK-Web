@@ -21,7 +21,7 @@ ul {
     .navNenuContainer {
         position: absolute;
         min-width: 96%;
-        min-height: 85vh;
+        min-height: 73vh;
         top: 13.5vh;
         left: -100%;
         opacity: 0;
