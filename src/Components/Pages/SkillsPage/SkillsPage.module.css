@@ -55,6 +55,7 @@ align-items: flex-start;
 overflow-y: auto;
 scroll-snap-type: y mandatory;
 padding:5px 0px;
+margin-bottom: 7px;
 }
 
 .skillsContent {
@@ -120,13 +121,13 @@ padding:5px 0px;
 
 
 .professionalSkillsWrapper{
-    width: 90;
-    height: 50%;
+    width: 90%;
+    height: 100%;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 10px;
 }
 
 .control {

@@ -1,28 +1,36 @@
-import { useEffect, useRef, useState } from 'react'
-import style from './TechnicalSkill.module.css'
+import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
+import { useInView } from 'react-intersection-observer'
+import style from './TechnicalSkill.module.css'
 
 
-export const TechnicalSkill = ({ pracentNum, icon, name }) => {
 
-    const [pracent, setPracent] = useState(0)
-    const timeoutId = useRef(null)
+export const TechnicalSkill = ({ percentNum, icon, name }) => {
+
+    const { ref, inView } = useInView({
+        threshold: 1,
+        triggerOnce: true
+    })
+    const [percent, setPercent] = useState(0)
 
     useEffect(() => {
-        for (let i = 0; i <= pracentNum; i++) {
-            timeoutId.current = setTimeout(() => {
-                setPracent(i)
-            }, (i * 20))
+        let intervalId;
+
+        if (inView) {
+            intervalId = setInterval(() => {
+                setPercent(prevPercent => prevPercent >= percentNum ? prevPercent : prevPercent + 1)
+            }, 20);
         }
+
         return () => {
-            clearTimeout(timeoutId.current);
+            clearInterval(intervalId);
         };
-    }, [])
+    }, [inView]);
 
 
 
     return (
-        <div className={style.container}>
+        <div className={style.container} ref={ref}>
 
             <div className={style.iconWrapper}>
                 <img src={icon} alt="icon" className={style.icon} />
@@ -30,12 +38,12 @@ export const TechnicalSkill = ({ pracentNum, icon, name }) => {
             <div className={style.contentWrapper}>
                 <motion.div className={style.wrapper}
                     initial={{ width: 0 }}
-                    animate={{ width: `${pracent}%` }}
-                    transition={{ duration: `.${pracent}%` }}
+                    animate={{ width: `${percent}%` }}
+                    transition={{ duration: `.${percent}%` }}
                 >
                 </motion.div>
-                <div className={style.pracent}>
-                    {`${pracent}%`}
+                <div className={style.percent}>
+                    {`${percent}%`}
                 </div>
             </div>
             <p className={style.technicalName}>{name}</p>

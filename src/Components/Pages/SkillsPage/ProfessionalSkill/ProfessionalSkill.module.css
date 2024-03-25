@@ -1,4 +1,4 @@
-/* CircularProgressBar.module.css */
+
 .container{
     min-width: 110px;
     padding: 10px;
@@ -42,7 +42,7 @@
 }
 
 
-.pracentCircle {
+.percentCircle {
     fill: none;
     stroke: #fd2a2a;
     stroke-width: 6;
@@ -54,7 +54,7 @@
 }
 
 
-.pracent {
+.percent {
     position: absolute;
     top: 50%;
     left: 50%;

@@ -2,10 +2,8 @@ import { AnimatedPage } from '../../Common/AnimatedPage/AnimatedPage'
 import { TechnicalSkill } from './TechnicalSkill/TechnicalSkill'
 import { ProfessionalSkill } from './ProfessionalSkill/ProfessionalSkill'
 import { skills } from './skillsData'
-
 import style from './SkillsPage.module.css'
-
-
+import { InfoLanguage } from './InfoLanguage/InfoLanguage'
 
 
 export const SkillsPage = () => {
@@ -25,7 +23,7 @@ export const SkillsPage = () => {
                                 <p className={style.paragraph}>Technical</p>
                                 <div className={style.technicalSkillsWrapper}>
                                     {technicals.map((skill, i) => (
-                                        <TechnicalSkill pracentNum={skill.pracent} icon={skill.icon} key={i} name={skill.name} />
+                                        <TechnicalSkill percentNum={skill.percent} icon={skill.icon} key={i} name={skill.name} />
                                     ))}
 
                                 </div>
@@ -35,9 +33,10 @@ export const SkillsPage = () => {
                                 <p className={style.paragraph}>Professional</p>
                                 <div className={style.professionalSkillsWrapper}>
                                     {professionals.map((profession, i) => (
-                                        <ProfessionalSkill name={profession.name} pracentNum={profession.pracent} key={i} />
+                                        <ProfessionalSkill name={profession.name} percentNum={profession.percent} key={i} />
                                     ))}
                                     <div className={style.control}></div>
+                                    <InfoLanguage />
                                 </div>
                             </div>
                         </div>

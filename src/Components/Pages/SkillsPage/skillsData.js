@@ -14,71 +14,71 @@ export const skills = {
 
     technicals: [
         {
-            pracent: 80,
+            percent: 80,
             icon: iconHtml,
             name: 'HTML5'
         },
         {
-            pracent: 80,
+            percent: 80,
             icon: iconCss,
             name: 'CSS3'
         },
         {
-            pracent: 60,
+            percent: 60,
             icon: iconJS,
             name: 'JAVASCRIPT'
         },
         {
-            pracent: 70,
+            percent: 70,
             icon: iconReact,
             name: 'REACT JS'
         },
         {
-            pracent: 70,
+            percent: 70,
             icon: iconRedux,
             name: 'REDUX'
         },
         {
-            pracent: 70,
+            percent: 70,
             icon: iconAxios,
             name: 'AXIOS'
         },
         {
-            pracent: 40,
+            percent: 30,
             icon: iconNode,
             name: 'NODE JS'
         },
         {
-            pracent: 50,
+            percent: 30,
             icon: iconExpress,
             name: 'EXPRESS JS'
         },
         {
-            pracent: 40,
+            percent: 40,
             icon: iconTS,
             name: 'TYPESCRIPT'
         },
         {
-            pracent: 70,
+            percent: 70,
             icon: iconGit,
             name: 'GIT'
         },
     ],
     professionals: [
         {
-            pracent: 80,
+            percent: 90,
             name: 'Creative'
         },
         {
-            pracent: 99,
+            percent: 99,
             name: 'Hard working'
         },
         {
-            pracent: 90,
+            percent: 90,
             name: 'Communicative'
         },
         {
-            pracent: 98,
+            percent: 95,
             name: 'Punctuality'
         },
 
