@@ -18,7 +18,7 @@ const App = () => {
   return (
     <div className='container'>
       <Header />
-      <AnimatePresence mode='wait'>
+      <AnimatePresence mode='wait' initial={false}>
         <Routes key={location.pathname} location={location} >
 
           <Route exact path={'/'} element={<HomePage />} />

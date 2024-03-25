@@ -20,7 +20,7 @@ const animationsTop = {
 
 export const AnimatedPage = ({
   children,
-  duration = 0.5,
+  duration = 0.2,
 }) => {
   return (
     <motion.div
@@ -29,7 +29,7 @@ export const AnimatedPage = ({
       animate='animate'
       exit='exit'
       variants={animationsTop}
-      transition={{ duration, delay: .4 }}
+      transition={{ duration, delay: .2 }}
     >
       {children}
     </motion.div>

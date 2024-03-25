@@ -35,7 +35,6 @@ ul {
         background: #222222;
         box-shadow: inset 5px 5px 10px #0e0e0e, inset -5px -5px 10px #363636;
         z-index: 10;
-        transition: all .5s ease;
     }
 
     .navNenuContainer.active {
@@ -44,7 +43,7 @@ ul {
         background-size: 100% 100%;
         left: 2%;
         opacity: 1;
-        transition: all .5s ease;
+        transition: all .3s ease;
         z-index: 10;
     }
 
