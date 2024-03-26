@@ -44,6 +44,7 @@
     text-shadow:
         -1px -1px 2px #ffffff,
         1px 1px 2px #0e0e0e;
+    box-shadow: inset 5px 5px 10px #0e0e0e, inset -5px -5px 10px #363636;
 }
 
 .skillsContentWrapper{

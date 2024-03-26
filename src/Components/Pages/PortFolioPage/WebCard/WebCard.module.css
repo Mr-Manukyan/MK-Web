@@ -1,0 +1,100 @@
+
+.webCardContainer{
+    width: auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: center;
+}
+
+.webCardContentWrapper {
+    width: 80%;
+    min-width: 320px;
+    height:90%;
+    background-color: #222222;
+    border-radius: 18px;
+    box-shadow: 2px 2px 4px #0e0e0e, -2px -2px 4px #363636,
+        inset 2px 2px 4px #0e0e0e, inset -2px -2px 4px #363636;
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 20px;
+
+}
+
+.webCardWrapper {
+    width:90%;
+    min-width: 280px;
+    height: 90%;
+    background-color: #222222;
+    text-decoration : none;
+    border-radius: 18px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(145deg, #1f1f1f, #252525);
+        box-shadow: -1px -1px 3px 0px #363636, -1px -1px 2px 0px #363636,
+            1px 1px 3px 0px #0e0e0e, 1px 1px 2px 0px #0e0e0e, inset 0px 0px 0px 0px #363636,
+            inset 0px 0px 0px 0px #0e0e0e, inset 0px 0px 0px 0px #363636,
+            inset 0px 0px 0px 0px #0e0e0e;
+    cursor: pointer;
+}
+
+.imageWrapper{
+    width: 85%;
+    height: auto;
+    box-shadow: inset 5px 5px 10px #0e0e0e,
+            inset -5px -5px 10px #363636;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+.webImg {
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+}
+.textInfoWrapper {
+    width: 85%;
+    height: 20%;
+    box-shadow: inset 5px 5px 10px #0e0e0e,
+        inset -5px -5px 10px #363636;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;   
+}
+
+.text{
+        margin: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        font-family: 'Poppins', sans-serif;
+        color: rgba(255, 255, 255, 0.747);
+        letter-spacing: 2px;
+        font-weight: 700;
+}
+
+.description{
+    color: rgba(255, 52, 52, 0.527);
+}
+
+@media screen and (max-width:399px) {
+.webCardContentWrapper {
+        width: 80%;
+        min-width: 300px;
+        margin: 0px 0px;
+    }
+
+}
+
+ 
+
+
