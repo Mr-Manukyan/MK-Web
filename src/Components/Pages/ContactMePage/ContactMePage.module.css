@@ -8,22 +8,326 @@
 }
 
 
-.mainWrapper {
-    width: 98%;
-    height: 100%;
+.contentContainer {
+    width: 97%;
+    height: 98%;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
-    padding: 20px;
     border-radius: 18px;
     background: #222222;
     box-shadow: inset 5px 5px 10px #0e0e0e, inset -5px -5px 10px #363636;
 
 }
+.contactParagraph{
+        padding: 10px 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
+        border-radius: 5px;
+        background-color: rgba(0, 0, 0, 0.171);
+        font-family: 'Poppins', sans-serif;
+        color: #222222;
+        letter-spacing: 3px;
+        font-weight: 700;
+        text-shadow:
+            -1px -1px 2px #ffffff,
+            1px 1px 2px #0e0e0e;
+        box-shadow: inset 5px 5px 10px #0e0e0e, inset -5px -5px 10px #363636;
+}
+.contentWrapper {
+    width: 95%;
+    height: 85%;
+    background-color: #222222;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 18px;
+    background: linear-gradient(145deg, #1f1f1f, #252525);
+        box-shadow: -1px -1px 3px 0px #363636, -1px -1px 2px 0px #363636,
+            1px 1px 3px 0px #0e0e0e, 1px 1px 2px 0px #0e0e0e, inset 0px 0px 0px 0px #363636,
+            inset 0px 0px 0px 0px #0e0e0e, inset 0px 0px 0px 0px #363636,
+            inset 0px 0px 0px 0px #0e0e0e;
+}
+
+.control {
+    width: 5px;
+    height: 97%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.control::after {
+    content: '';
+    width: 4px;
+    height: 97%;
+    border-radius: 2px;
+    background: linear-gradient(145deg, #333333, #222222);
+    box-shadow: 1px 1px 2px #040404, -0.5px -0.5px 2px #929292;
+    overflow: hidden;
+}
+
+.robotWrapper {
+  width: 45%;
+  height: 90%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #222222;
+  box-shadow: inset 5px 5px 10px #0e0e0e, inset -5px -5px 10px #363636;
+}
+.robotContent{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: rgba(0, 0, 0, 0.171);
+  object-fit: cover;
+}
+
+.robot{
+    max-width: 80%;
+    min-width: 200px;
+    max-height: 90%;
+    object-fit: cover;
+}
+.content{
+    width: 45%;
+    height: 90%;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.171);
+    box-shadow: inset 5px 5px 10px #0e0e0e, inset -5px -5px 10px #363636;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.body{
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.bodyInfo{
+   display: flex;
+   justify-content:flex-start;
+   align-items: center;
+   max-width: 600px;
+   width: 80%;
+    background: #222222;
+    box-shadow: inset 5px 5px 10px #0e0e0e, inset -5px -5px 10px #363636;
+   padding: 15px 20px;
+   border-radius: 10px;
+}
+.iconWrapper{
+    min-width: 65px;
+    min-height: 65px;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1a1a1a;
+    border-radius: 100%;
+    box-shadow: -1px -1px 3px 0px #363636, -1px -1px 2px 0px #363636,
+            1px 1px 3px 0px #0e0e0e, 1px 1px 2px 0px #0e0e0e, inset 0px 0px 0px 0px #363636,
+            inset 0px 0px 0px 0px #0e0e0e, inset 0px 0px 0px 0px #363636,
+            inset 0px 0px 0px 0px #0e0e0e;
+}
+.icon{
+    width: 55px;
+    height: 55px;
+    object-fit: cover;
+}
+
+.info{
+    color: rgb(155, 155, 155);
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    border-bottom: 1px solid rgba(255, 49, 49, 0.507);
+    margin-left: 30px;
+}
+
+
+@media screen and (max-width:1199px) {
+ 
+.bodyInfo {
+        width: 85%;
+        padding: 7px 10px;
+
+    }
+
+    .iconWrapper {
+        min-width: 45px;
+        min-height: 45px;
+    }
+
+    .icon {
+        width: 35px;
+        height: 35px;
+    }
+
+    .info {
+        font-size: 14px;
+        font-weight: 500;
+        margin-left: 30px;
+    }
+}
+
+@media screen and (max-width:959px) {
+
+.bodyInfo {
+        width: 85%;
+        padding: 7px 10px;
+
+    }
+
+    .iconWrapper {
+        min-width: 35px;
+        min-height: 35px;
+    }
+
+    .icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .info {
+        font-size: 11px;
+        font-weight: 500;
+        margin-left: 20px;
+    }
+}
+
+
+@media screen and (max-width:767px) {
+.contentWrapper{
+    flex-direction: column;
+}
+.control {
+    width: 97%;
+    height: 5px;
+}
+
+.control::after {
+    content: '';
+    width: 97%;
+    height:4px;
+  
+}
+
+.robotWrapper {
+    width: 90%;
+    height: 45%;
+}
+.robot {
+    max-width: 80%;
+    min-width: 165px;
+    max-height: 90%;
+    object-fit: cover;
+}
 
 .content {
-    width: 100px;
-    height: 30vh;
-    background-color: rgb(255, 122, 122);
+    width: 90%;
+    height: 45%;
+    border-radius: 10px;
+}
+.contactParagraph {
+        font-size: 20px;
+        padding: 7px 20px;
+        border-radius: 5px;
+}
+.bodyInfo {
+    width: 85%;
+    padding: 7px 10px;
+
+}
+
+.iconWrapper {
+    min-width: 45px;
+    min-height: 45px;
+}
+
+.icon {
+    width: 35px;
+    height: 35px;
+}
+
+.info {
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 30px;
+}
+}
+
+@media screen and (max-width:539px) {
+   
+
+    .bodyInfo {
+        width: 85%;
+        padding: 7px 10px;
+
+    }
+
+    .iconWrapper {
+        min-width: 35px;
+        min-height: 35px;
+    }
+
+    .icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .info {
+        font-size: 12px;
+        font-weight: 500;
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width:449px) {
+
+.content {
+        width: 95%;
+        height: 45%;
+        border-radius: 10px;
+}
+.robotWrapper {
+    width: 95%;
+    height: 45%;
+}
+
+    .info {
+        font-size: 12px;
+        font-weight: 500;
+        margin-left: 15px;
+    }
+}
+
+@media screen and (max-width:399px) {
+.info {
+        font-size: 11px;
+        font-weight: 500;
+        margin-left: 15px;
+    }
 }

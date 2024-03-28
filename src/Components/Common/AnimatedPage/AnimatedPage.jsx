@@ -18,8 +18,8 @@ const animationsTop = {
 }
 
 
-export const AnimatedPage = ({ children, duration = 0.2 }) => {
-  const screenWidthSize = window.innerWidth
+export const AnimatedPage = ({ children, duration = 0.3 }) => {
+  // const screenWidthSize = window.innerWidth
   return (
     <motion.div
       className={style.animateContainer}
@@ -27,7 +27,7 @@ export const AnimatedPage = ({ children, duration = 0.2 }) => {
       animate='animate'
       exit='exit'
       variants={animationsTop}
-      transition={{ duration, delay: screenWidthSize > 767 ? 0.2 : 0.4 }}
+      transition={{ duration, delay: 0 }}
     >
       {children}
     </motion.div>

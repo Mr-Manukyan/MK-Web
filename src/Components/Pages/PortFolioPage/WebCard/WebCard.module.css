@@ -8,11 +8,12 @@
     scroll-snap-align: center;
 }
 
+
 .webCardContentWrapper {
     width: 80%;
     min-width: 320px;
     height:90%;
-    background-color: #222222;
+    background-color: rgba(0, 0, 0, 0.171);
     border-radius: 18px;
     box-shadow: 2px 2px 4px #0e0e0e, -2px -2px 4px #363636,
         inset 2px 2px 4px #0e0e0e, inset -2px -2px 4px #363636;
@@ -25,8 +26,8 @@
 }
 
 .webCardWrapper {
-    width:90%;
-    min-width: 280px;
+    width:85%;
+    min-width: 260px;
     height: 90%;
     background-color: #222222;
     text-decoration : none;
@@ -62,6 +63,7 @@
 .textInfoWrapper {
     width: 85%;
     height: 20%;
+    background-color: rgba(0, 0, 0, 0.2);
     box-shadow: inset 5px 5px 10px #0e0e0e,
         inset -5px -5px 10px #363636;
     display: flex;
