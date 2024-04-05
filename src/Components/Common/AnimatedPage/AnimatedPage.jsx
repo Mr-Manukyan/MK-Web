@@ -18,7 +18,7 @@ const animationsTop = {
 }
 
 
-export const AnimatedPage = ({ children, duration = 0.3 }) => {
+export const AnimatedPage = ({ children, duration = 0.2 }) => {
   // const screenWidthSize = window.innerWidth
   return (
     <motion.div
