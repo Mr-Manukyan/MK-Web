@@ -27,7 +27,7 @@ export const AnimatedPage = ({ children, duration = 0.2 }) => {
       animate='animate'
       exit='exit'
       variants={animationsTop}
-      transition={{ duration, delay: screenWidthSize > 720 ? 0.5 : 0 }}
+      transition={{ duration, delay: screenWidthSize < 720 ? 0.5 : 0 }}
     >
       {children}
     </motion.div>
