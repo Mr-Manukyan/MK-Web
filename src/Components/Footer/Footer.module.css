@@ -4,10 +4,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position:sticky;
-    left: 0;
-    bottom: 0;
-    /* margin-top: 2px; */
+    /* position:sticky; */
+    position: relative;
+    /* left: 0;
+    bottom: 0; */
 }
 
 .footerContent {

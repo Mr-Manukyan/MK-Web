@@ -23,13 +23,13 @@ export const Main = () => {
                             <TypeAnimation
                                 sequence={[
                                     'Frontend Developer,',
-                                    2000,
+                                    1000,
                                     'UI and UX designer,',
-                                    2000,
-                                    'just good person 😉.',
-                                    2000
+                                    1000,
+                                    'good person 😉.',
+                                    1200
                                 ]}
-                                speed={30}
+                                speed={50}
                                 className={style.textTypeing}
                                 repeat={Infinity}
                             />
