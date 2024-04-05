@@ -23,10 +23,10 @@ ul {
         position: absolute;
         min-width: 100%;
         min-height: 72vh;
-        top: 12.7vh;
+        top: 12.5vh;
         left: -100%;
         opacity: 0;
-        transition: all .2s ease;
+        transition: all .5s ease;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -44,7 +44,7 @@ ul {
         background-size: 100% 100%;
         left: 0%;
         opacity: 1;
-        transition: all .4s ease;
+        transition: all .5s ease;
         z-index: 100;
     }
 
