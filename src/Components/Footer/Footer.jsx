@@ -9,18 +9,18 @@ export const Footer = () => {
         { name: 'twitter', href: '#' },
     ]
     return (
-        <>
-            <div className={style.control}></div>
-            <div className={style.footerContainer}>
-                <div className={style.footerContent}>
-                    <div className={style.socialBtnWrapper}>
-                        {socialNames.map((item, i) => (
-                            <SocialButton name={item.name} href={item.href} key={i} />
-                        ))}
-                    </div>
 
+        <div className={style.footerContainer}>
+            <div className={style.control}></div>
+            <div className={style.footerContent}>
+                <div className={style.socialBtnWrapper}>
+                    {socialNames.map((item, i) => (
+                        <SocialButton name={item.name} href={item.href} key={i} />
+                    ))}
                 </div>
+
             </div>
-        </>
+
+        </div>
     )
 }

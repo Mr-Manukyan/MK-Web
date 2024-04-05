@@ -21,9 +21,9 @@ ul {
 @media screen and (max-width:767px) {
     .navNenuContainer {
         position: absolute;
-        min-width: 96%;
-        min-height: 73vh;
-        top: 13.5vh;
+        min-width: 100%;
+        min-height: 72vh;
+        top: 12.7vh;
         left: -100%;
         opacity: 0;
         transition: all .4s ease;
@@ -42,7 +42,7 @@ ul {
         background: #222222;
         background-repeat: no-repeat;
         background-size: 100% 100%;
-        left: 2%;
+        left: 0%;
         opacity: 1;
         transition: all .4s ease;
         z-index: 100;

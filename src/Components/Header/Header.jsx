@@ -36,8 +36,9 @@ export const Header = () => {
                     </div>
 
                 </div>
+                <div className={style.control}></div>
             </header>
-            <div className={style.control}></div>
+
         </>
     )
 }

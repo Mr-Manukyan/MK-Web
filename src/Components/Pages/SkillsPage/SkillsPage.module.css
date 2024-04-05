@@ -1,6 +1,6 @@
 .container {
     width: 100%;
-    height: 74vh;
+    height: 78vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -11,8 +11,8 @@
 
 
 .mainWrapper {
-    width: 98%;
-    height: 98%;
+    width: 97%;
+    height: 92%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -126,7 +126,7 @@ margin-bottom: 7px;
     height: 100%;
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     margin-top: 10px;
 }
@@ -154,7 +154,6 @@ margin-bottom: 7px;
 @media screen and (max-width:767px) {
 .mainWrapper {
         width: 96%;
-        height: 95%;
         padding: 10px 0px;
     }
 
@@ -199,7 +198,7 @@ margin-bottom: 7px;
 
 .professionalSkillsContent {
     width: 90%;
-    min-height: 101%;
+    min-height: 100%;
     border: 1px solid #363636;
     scroll-snap-align: center;
  

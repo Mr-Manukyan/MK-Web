@@ -12,7 +12,7 @@
 
 .footerContent {
     width: 70%;
-    height:9vh;
+    height:10vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,7 +21,7 @@
     box-shadow: inset 5px 5px 10px #0e0e0e, inset -5px -5px 10px #363636;
     position: fixed;
     background-color: rgba(0, 0, 0, 0.171);
-    margin-bottom: 5px;
+    margin-bottom: 17px;
 }
 
 .socialBtnWrapper {
@@ -33,13 +33,13 @@
 }
 
 .control {
+    position: absolute;
+    top: -2vh;
     width: 100%;
-    height: 18px;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    flex: 0 0 auto;
 }
 
 .control::after {
