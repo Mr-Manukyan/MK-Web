@@ -14,12 +14,12 @@ const cardAnimate = {
 }
 
 export const WebCard = ({ data, custom }) => {
-
+    const screenWidthSize = window.innerWidth
     return (
         <motion.div className={style.webCardContainer}
             initial='hidden'
             animate='visible'
-            variants={cardAnimate}
+            variants={screenWidthSize > 720 ? cardAnimate : null}
             custom={custom}
 
         >
