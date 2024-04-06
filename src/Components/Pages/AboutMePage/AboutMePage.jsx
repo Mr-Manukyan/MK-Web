@@ -1,13 +1,11 @@
 import { AnimatedPage } from '../../Common/AnimatedPage/AnimatedPage'
-import dragon from '../../../Assets/icons/dragon-S.png'
-import userIcon from '../../../Assets/icons/user.png'
 import { hobbiesData } from './hobbiesData'
-
-
-import style from './AboutMePage.module.css'
 import { TypeAnimation } from 'react-type-animation'
 import { Hobbie } from './Hobbies/Hobbie'
 import { BombText } from '../../Common/BombText/BombText'
+import dragon from '../../../Assets/icons/dragon.png'
+import userIcon from '../../../Assets/icons/user.png'
+import style from './AboutMePage.module.css'
 
 export const AboutMePage = () => {
     return (
@@ -18,8 +16,8 @@ export const AboutMePage = () => {
                     <div className={style.contentWrapper}>
                         <div className={style.messageMain}>
                             <div className={style.messageBody}>
-                                <BombText left='20px' top='20px' />
-                                <BombText right='20px' top='20px' />
+                                <BombText left='4%' top='4%' />
+                                <BombText right='4%' top='4%' />
                                 <div className={style.imgWrapper}>
                                     <div className={style.imgUserContnet}>
                                         <img src={userIcon} alt="userIcon" className={style.userIcon} />
