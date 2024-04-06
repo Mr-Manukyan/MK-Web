@@ -18,8 +18,8 @@ export const AboutMePage = () => {
                     <div className={style.contentWrapper}>
                         <div className={style.messageMain}>
                             <div className={style.messageBody}>
-                                <BombText left='15px' top='20px' />
-                                <BombText right='15px' top='20px' />
+                                <BombText left='20px' top='20px' />
+                                <BombText right='20px' top='20px' />
                                 <div className={style.imgWrapper}>
                                     <div className={style.imgUserContnet}>
                                         <img src={userIcon} alt="userIcon" className={style.userIcon} />
