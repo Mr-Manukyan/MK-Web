@@ -35,17 +35,9 @@ export const Main = () => {
                             />
                         </div>
                     </div>
-                    {/* 
-                    <div className={style.infoTextWrapper}>
-                        <p className={style.infoText}>I offer the best projects with high-quality work and beautiful design.</p>
-                    </div> */}
-
                 </div>
-
             </div>
-
             <div className={style.control}></div>
-
             <div className={style.rightContent}>
                 <UserAvatar />
                 <BombText left='20px' top='20px' />

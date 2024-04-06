@@ -1,0 +1,82 @@
+.container {
+    min-width: 90px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #222222;
+    border-radius: 10px;
+    box-shadow: inset 5px 5px 10px #0e0e0e, inset -5px -5px 10px #363636;
+    margin:10px;
+
+}
+
+.body {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(145deg, #1f1f1f, #252525);
+    box-shadow: -1px -1px 3px 0px #363636, -1px -1px 2px 0px #363636,
+        1px 1px 3px 0px #0e0e0e, 1px 1px 2px 0px #0e0e0e, inset 0px 0px 0px 0px #363636,
+        inset 0px 0px 0px 0px #0e0e0e, inset 0px 0px 0px 0px #363636,
+        inset 0px 0px 0px 0px #0e0e0e;
+
+}
+
+.hobbieIcon {
+    max-width: 70%;
+    max-height: 70%;
+    object-fit: cover;
+}
+
+.hobbieName{
+    font-size: 13px;
+    color: aliceblue;
+    
+}
+
+@media screen and (max-width:899px) {
+.container {
+        min-width: 75px;
+    }
+
+    .body {
+        width: 40px;
+        height: 40px;
+    }
+
+    .hobbieIcon {
+        max-width: 60%;
+        max-height: 60%;
+    }
+
+    .hobbieName {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:479px) {
+    .container {
+        min-width: 65px;
+            padding: 5pxpx;
+            margin: 5px;
+    }
+
+    .body {
+        width: 35px;
+        height: 35px;
+    }
+
+    .hobbieIcon {
+        max-width: 60%;
+        max-height: 60%;
+    }
+
+    .hobbieName {
+        font-size: 10px;
+    }
+}
