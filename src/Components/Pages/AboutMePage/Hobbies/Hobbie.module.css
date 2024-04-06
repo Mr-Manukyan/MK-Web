@@ -36,6 +36,7 @@
 .hobbieName{
     font-size: 13px;
     color: aliceblue;
+    margin-top: 3px;
     
 }
 
@@ -62,7 +63,7 @@
 @media screen and (max-width:479px) {
     .container {
         min-width: 65px;
-            padding: 5pxpx;
+            padding: 7px;
             margin: 5px;
     }
 
@@ -80,3 +81,4 @@
         font-size: 10px;
     }
 }
+

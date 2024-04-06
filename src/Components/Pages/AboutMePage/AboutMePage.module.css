@@ -326,6 +326,15 @@
     font-size: 10px;
 }
 }
+
+@media screen and (max-width:413px) {
+.imgWrapper {
+        top: -70px;
+    
+    }
+}
+
+
 @media screen and (max-width:394px) {
 .message {
         font-size: 9px;
