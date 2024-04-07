@@ -12,7 +12,7 @@
 }
 
 .inputGroup input[type="checkbox"]+label .lightIcon {
-    color: #e5ff00d0;
+    color: rgb(255, 49, 49);
 }
 
 .inputGroup input[type="checkbox"]+label .darkIcon {
@@ -32,7 +32,7 @@
 }
 
 .inputGroup input[type="checkbox"]:checked+label .darkIcon {
-    color: #00aeffdc;;
+    color: #ffffffdc;;
     opacity: 1;
 }
 
@@ -80,5 +80,18 @@
 
 .inputGroup .darkIcon svg {
     transform: rotate(-90deg);
+}
+
+@media screen and (max-width:767px) {
+    .inputGroup label {
+            width: 66px;
+            height: 35px;    
+        }
+
+.inputGroup .lightIcon svg,
+.inputGroup .darkIcon svg {
+    width: 19px;
+    height: 19px;
+}
 }
     

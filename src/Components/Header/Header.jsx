@@ -4,7 +4,9 @@ import { Logo } from '../Common/Logo/Logo'
 import { MenuBar } from './MenuBar/MenuBar'
 import { SidebarData } from './SideBarData'
 import { MenuButton } from './MenuButton/MenuButton'
-import { ChooseLanguage } from '../Common/ChooseLanguage/ChooseLanguage'
+import { DayAndNight } from './DayAndNight/DayAndNight'
+import { useTheme } from '../../Hooks/hooks'
+
 
 
 
@@ -12,11 +14,20 @@ import { ChooseLanguage } from '../Common/ChooseLanguage/ChooseLanguage'
 export const Header = () => {
 
     const [isShowMenuBar, setIsShowMenuBar] = useState(false)
+    const { theme, lightColor } = useTheme()
+
+    console.log(lightColor)
 
     return (
         <>
             <header className={style.headerContainer}>
-                <div className={style.headerWrapper}>
+                <div className={style.headerWrapper} style={
+                    {
+                        background: theme === 'light' ? lightColor.bg : '',
+                        boxShadow: theme === 'light' ? lightColor.boxShadowInto : ''
+
+                    }
+                }>
 
                     <div className={style.logoContainer}>
                         <Logo />
@@ -27,8 +38,8 @@ export const Header = () => {
                         setIsShowMenuBar={setIsShowMenuBar} />
 
 
-                    <div className={style.languageAndDayNightWrapper}>
-                        <ChooseLanguage />
+                    <div className={style.dayNightWrapper}>
+                        <DayAndNight />
                     </div>
 
                     <div className={style.menuButtonWrapper}>

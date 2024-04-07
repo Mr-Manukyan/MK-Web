@@ -4,10 +4,7 @@ import robotGif from '../../../Assets/icons/robotHello.gif'
 import gmailIcon from '../../../Assets/icons/gmail.png'
 import phoneIcon from '../../../Assets/icons/call.png'
 import postIcon from '../../../Assets/icons/post.png'
-
 import style from './ContactMePage.module.css'
-
-import { StarrySky } from '../../Common/StarrySky/StarrySky'
 
 const robotAnime = {
     hidden: {
@@ -83,7 +80,7 @@ export const ContactMePage = () => {
                     </div>
 
                 </div>
-                {/* <StarrySky /> */}
+
             </div>
         </AnimatedPage>
     )

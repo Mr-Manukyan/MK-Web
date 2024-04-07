@@ -4,9 +4,9 @@ import { BrowserRouter } from 'react-router-dom'
 import { Provider } from 'react-redux'
 import App from './App'
 import { store } from './Redux/Store/store'
-import { LanguageProvider } from './Components/Common/LanguageProvider/LanguageProvider'
 
 import './index.css'
+import { ThemeProvider } from './Hooks/hooks'
 
 const container = document.getElementById('root')
 const root = createRoot(container)
@@ -14,9 +14,9 @@ const root = createRoot(container)
 root.render(
   <BrowserRouter>
     <Provider store={store}>
-      <LanguageProvider>
+      <ThemeProvider>
         <App />
-      </LanguageProvider>
+      </ThemeProvider>
     </Provider>
   </BrowserRouter>
 )

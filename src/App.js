@@ -9,30 +9,34 @@ import { PortFolioPage } from './Components/Pages/PortFolioPage/PortFolioPage';
 import { ContactMePage } from './Components/Pages/ContactMePage/ContactMePage';
 
 import './App.css';
+import { useTheme } from './Hooks/hooks';
 
 
 const App = () => {
 
-  const location = useLocation()
+    const location = useLocation()
+    const { theme, lightColor } = useTheme()
 
-  return (
-    <div className='container'>
-      <Header />
-      <AnimatePresence mode='wait' initial={false}>
-        <Routes key={location.pathname} location={location} >
+    return (
+        <div className='container' style={{
+            background: theme === 'light' ? lightColor.bg : '',
+        }}>
+            <Header />
+            <AnimatePresence mode='wait' initial={false}>
+                <Routes key={location.pathname} location={location} >
 
-          <Route exact path={'/'} element={<HomePage />} />
-          <Route exact path='/aboutMe' element={<AboutMePage />} />
-          <Route exact path='/skills' element={<SkillsPage />} />
-          <Route exact path='/portfolio' element={<PortFolioPage />} />
-          <Route exact path='/contactMe' element={<ContactMePage />} />
+                    <Route exact path={'/'} element={<HomePage />} />
+                    <Route exact path='/aboutMe' element={<AboutMePage />} />
+                    <Route exact path='/skills' element={<SkillsPage />} />
+                    <Route exact path='/portfolio' element={<PortFolioPage />} />
+                    <Route exact path='/contactMe' element={<ContactMePage />} />
 
-          {/* <Route path='*' element={<NotFound />} /> */}
-        </Routes>
-      </AnimatePresence>
-      <Footer />
-    </div>
-  );
+                    {/* <Route path='*' element={<NotFound />} /> */}
+                </Routes>
+            </AnimatePresence>
+            <Footer />
+        </div>
+    );
 }
 
 export default App;
