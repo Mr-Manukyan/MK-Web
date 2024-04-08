@@ -4,15 +4,32 @@
     min-height: 60px;
     border-radius: 100%;
     border: 4px solid #090909;
-    background-color: transparent;
     background-image: linear-gradient(145deg, #171717, #444245);
-    box-sizing: border-box;
     box-shadow: inset 1px 1px 0 #7d7c7e, inset -1px -1px 0px #1c1c1c;
+    background-color: transparent;
+    box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0px 10px;
 }
+
+#light{
+    border: 4px solid #e7e7e7;
+    background-image: linear-gradient(145deg, #9e9e9e, #e2e2e2);
+    box-shadow: inset 1px 1px 0 #e2e2e2, inset -1px -1px 0px #8b8b8b,
+}
+
+#light::before{
+        content: '';
+        background-image: linear-gradient(145deg, #e7e7e7, #575757);
+        box-shadow: 3px 3px 7px #c4c4c4, -2px -2px 7px #c9c9c9;   
+ }
+
+ #light .icon svg{
+    fill: #141414c7;
+ }
+ 
 
 .button::before {
     position: absolute;
@@ -22,8 +39,9 @@
     border-radius: inherit;
     background-color: transparent;
     background-image: linear-gradient(145deg, #262626, #3b3b3b);
-    z-index: -1;
     box-shadow: 3px 3px 7px #141414, -2px -2px 7px #3d3d3d;
+    z-index: -1;
+   
 }
 
 .button .icon {
@@ -39,7 +57,7 @@
 .button .icon svg {
     height: 100%;
     width: 100%;
-    fill: #969696;
+    fill: #eeeeee9c;
     transition: all .1s ease;
 }
 

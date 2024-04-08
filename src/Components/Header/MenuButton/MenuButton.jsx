@@ -1,10 +1,10 @@
-import { useState } from 'react';
 import { motion } from 'framer-motion';
 import style from './MenuButton.module.css';
+import { useTheme } from '../../../Hooks/hooks';
 
 export const MenuButton = ({ setIsShowMenuBar, isShowMenuBar }) => {
 
-
+    const { theme } = useTheme()
     const handleClick = () => {
         setIsShowMenuBar(!isShowMenuBar)
     };
@@ -14,6 +14,7 @@ export const MenuButton = ({ setIsShowMenuBar, isShowMenuBar }) => {
         <motion.div
             className={`${style.m_button} ${isShowMenuBar ? style.active : ''}`}
             onClick={handleClick}
+            id={theme === 'light' ? style.light : ''}
         >
             <motion.span
                 className={style.bar}

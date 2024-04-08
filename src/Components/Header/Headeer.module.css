@@ -20,11 +20,6 @@
     box-shadow: inset 5px 5px 10px #0e0e0e, inset -5px -5px 10px #363636;
     margin-top: 15px;
     position: relative;
-    /* color: #d7d7d7;
-    color: #474747;
-    color: #e2e2e2;
-    box-shadow: inset 5px 5px 10px #8b8b8b, inset -5px -5px 10px #e2e2e2 inset 5px 5px 10px #8b8b8b; */
-   
 
 }
 
@@ -52,22 +47,18 @@
 .control {
     position: absolute;
     bottom: -2vh;
-    width: 100%;
+    width: 97%;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-}
-
-.control::after {
-    content: '';
-    width: 97%;
     height: 4px;
     border-radius: 2px;
+    overflow: hidden;
     background: linear-gradient(145deg, #333333, #222222);
     box-shadow: 1px 1px 2px #040404, -0.5px -0.5px 2px #929292;
-    overflow: hidden;
 }
+
 
 
 @media screen and (max-width:767px) {

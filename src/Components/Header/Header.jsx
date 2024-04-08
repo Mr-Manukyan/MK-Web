@@ -16,8 +16,6 @@ export const Header = () => {
     const [isShowMenuBar, setIsShowMenuBar] = useState(false)
     const { theme, lightColor } = useTheme()
 
-    console.log(lightColor)
-
     return (
         <>
             <header className={style.headerContainer}>
@@ -47,7 +45,13 @@ export const Header = () => {
                     </div>
 
                 </div>
-                <div className={style.control}></div>
+                <div className={style.control} style={
+                    {
+                        background: theme === 'light' ? lightColor.controlBG : '',
+                        boxShadow: theme === 'light' ? lightColor.controlBoxShadow : ''
+
+                    }
+                }></div>
             </header>
 
         </>

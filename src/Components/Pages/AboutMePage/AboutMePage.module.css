@@ -38,6 +38,15 @@
     margin-bottom: 15px;
 }
 
+#light{
+    color: #2e2e2e79;
+    background-color: #e7e7e7;
+    text-shadow:
+            -1px -1px 2px #cccccc,
+            1px 1px 2px #0e0e0e;
+    box-shadow: inset 6px 6px 12px #8b8b8b, inset -6px -6px 12px #e2e2e2;
+}
+
 .contentWrapper {
     width: 95%;
     height: 85%;
@@ -66,6 +75,19 @@
     align-items: center;
 }
 
+#lightImgWrapper{
+    background-color: #e7e7e7;
+    background: linear-gradient(145deg, #8b8b8b, #e2e2e2);
+    box-shadow: -1px -1px 3px 0px #e2e2e2,
+        -1px -1px 2px 0px #e2e2e2,
+        1px 1px 3px 0px #8b8b8b,
+        1px 1px 2px 0px #8b8b8b,
+        inset 0px 0px 0px 0px #e2e2e2,
+        inset 0px 0px 0px 0px #8b8b8b,
+        inset 0px 0px 0px 0px #e2e2e2,
+        inset 0px 0px 0px 0px #8b8b8b;
+}
+
 .imgUserContnet {
     width: 130px;
     height: 130px;
@@ -77,6 +99,12 @@
     background-color: rgba(0, 0, 0, 0.171);
     box-shadow: inset 5px 5px 10px #0e0e0e, inset -5px -5px 10px #363636;
 }
+
+#lightImgUserContnet{
+    background-color: rgba(255, 255, 255, 0.411);
+    box-shadow: inset 7px 7px 14px #8b8b8b, inset -7px -7px 14px #e2e2e2;   
+}
+
 .imgLogoContnet {
     width: 130px;
     height: 130px;
@@ -87,6 +115,10 @@
     align-items: center;
     background-color: rgba(0, 0, 0, 0.171);
     box-shadow: inset 5px 5px 10px #0e0e0e, inset -5px -5px 10px #363636;
+}
+#lightImgLogoContnet {
+    background-color: rgba(255, 255, 255, 0.411);
+    box-shadow: inset 7px 7px 14px #8b8b8b, inset -7px -7px 14px #e2e2e2;
 }
 
 .messageMain{
@@ -111,6 +143,19 @@
 
 }
 
+#lightMessageBody{
+    background-color: #e7e7e7;
+        background: linear-gradient(145deg, #b8b8b8, #e2e2e2);
+        box-shadow: -1px -1px 3px 0px #e2e2e2,
+            -1px -1px 2px 0px #e2e2e2,
+            1px 1px 3px 0px #b8b8b8,
+            1px 1px 2px 0px #b8b8b8,
+            inset 0px 0px 0px 0px #e2e2e2,
+            inset 0px 0px 0px 0px #b8b8b8,
+            inset 0px 0px 0px 0px #e2e2e2,
+            inset 0px 0px 0px 0px #b8b8b8;
+}
+
 
 .messageContainer{
     width: 95%;
@@ -124,6 +169,11 @@
    
 }
 
+#lightMessageContainer{
+        background-color: #e7e7e7;
+        box-shadow: inset 7px 7px 14px #8b8b8b, inset -7px -7px 14px #e2e2e2;
+}
+
 .messageWrapper{
     width: 90%;
     height: 85%;
@@ -134,6 +184,9 @@
 .message {
     color: aliceblue;
     font-size: 16px;
+}
+#lightMessage{
+    color: rgb(0, 0, 0);
 }
 
 .hobbiesMain {
@@ -157,7 +210,18 @@
     align-items: center;
 }
 
-
+#lightHobbiesBody{
+    background-color: #e7e7e7;
+        background: linear-gradient(145deg, #b8b8b8, #e2e2e2);
+        box-shadow: -1px -1px 3px 0px #e2e2e2,
+            -1px -1px 2px 0px #e2e2e2,
+            1px 1px 3px 0px #b8b8b8,
+            1px 1px 2px 0px #b8b8b8,
+            inset 0px 0px 0px 0px #e2e2e2,
+            inset 0px 0px 0px 0px #b8b8b8,
+            inset 0px 0px 0px 0px #e2e2e2,
+            inset 0px 0px 0px 0px #b8b8b8;
+}
 
 .hobbiesContainer {
     width: 95%;
@@ -168,6 +232,11 @@
     display: flex;
     justify-content: center;
     align-items: flex-end;
+}
+
+#lightHobbiesContainer{
+    background-color: #e7e7e7;
+    box-shadow: inset 7px 7px 14px #8b8b8b, inset -7px -7px 14px #e2e2e2;
 }
 
 .hobbiesWrapper {
@@ -191,6 +260,11 @@
     margin-bottom: 10px;
 }
 
+#lightParagraphMotto{
+    color: rgb(68, 68, 68);
+    font-weight: 800;
+}
+
 .paragraphHobbies {
     color: rgb(155, 155, 155);
     font-size: calc(17px + 3 * ((100vw - 320px) / (1280 - 320)));
@@ -200,6 +274,11 @@
     border-bottom: 1px solid rgba(255, 49, 49, 0.486);
     text-align: center;
     margin-top: 15%;
+}
+
+#lightParagraphHobbies {
+    color: rgb(68, 68, 68);
+    font-weight: 800;
 }
 
 .hobbiesContent{
@@ -230,17 +309,28 @@
     color: aliceblue;
     text-align: center;
 }
+#lightMotto{
+    color: rgb(29, 29, 29);
+    font-weight: 600;
+}
+
 
 @media screen and (max-width:1079px) {
 .message {
         font-size: 14px;
     }
+ .lightMessage{
+    font-size: 14px;
+ }
 }
 
 @media screen and (max-width:899px) {
     .message {
         font-size: 12px;
     }
+         .lightMessage {
+             font-size: 12px;
+         }
 }
 
 @media screen and (max-width:767px) {
@@ -298,12 +388,19 @@
     .message {
         font-size: 15px;
     }
+
+         .lightMessage {
+             font-size: 14px;
+         }
 }
 
 @media screen and (max-width:599px) {
 .message {
         font-size: 12px;
     }
+         .lightMessage {
+             font-size: 12px;
+         }
 }
 
 @media screen and (max-width:479px) {
@@ -325,6 +422,9 @@
 .message {
     font-size: 10px;
 }
+ .lightMessage {
+     font-size: 10px;
+ }
 }
 
 @media screen and (max-width:413px) {
@@ -339,6 +439,9 @@
 .message {
         font-size: 9px;
     }
+         .lightMessage {
+             font-size: 9px;
+         }
 }
 
 

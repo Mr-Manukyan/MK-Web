@@ -12,6 +12,11 @@
 
 }
 
+#lightContainer{
+    background-color: #e7e7e7;
+    box-shadow: inset 7px 7px 14px #8b8b8b, inset -7px -7px 14px #e2e2e2;
+}
+
 .body {
     width: 50px;
     height: 50px;
@@ -26,6 +31,19 @@
         inset 0px 0px 0px 0px #0e0e0e;
 
 }
+#lightBoddy{
+    background: linear-gradient(145deg, #b8b8b8, #e2e2e2);
+        box-shadow: -1px -1px 3px 0px #e2e2e2,
+            -1px -1px 2px 0px #e2e2e2,
+            1px 1px 3px 0px #b8b8b8,
+            1px 1px 2px 0px #b8b8b8,
+            inset 0px 0px 0px 0px #e2e2e2,
+            inset 0px 0px 0px 0px #b8b8b8,
+            inset 0px 0px 0px 0px #e2e2e2,
+            inset 0px 0px 0px 0px #b8b8b8;
+}
+
+
 
 .hobbieIcon {
     max-width: 70%;
@@ -38,6 +56,10 @@
     color: aliceblue;
     margin-top: 3px;
     
+}
+
+#lightHobbieName {
+    color: rgb(59, 59, 59);
 }
 
 @media screen and (max-width:899px) {
@@ -58,6 +80,9 @@
     .hobbieName {
         font-size: 12px;
     }
+        #lightHobbieName {
+            font-size: 12px;
+        }
 }
 
 @media screen and (max-width:479px) {
@@ -80,5 +105,8 @@
     .hobbieName {
         font-size: 10px;
     }
+           #lightHobbieName {
+               font-size: 10px;
+           }
 }
 

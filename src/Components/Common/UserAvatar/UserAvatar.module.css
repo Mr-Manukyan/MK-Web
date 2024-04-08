@@ -26,6 +26,13 @@
     align-items: center;
 }
 
+#light{
+    background-color: #e7e7e7;
+    border-radius: 50%;
+    box-shadow: 2px 2px 4px #afafaf, -2px -2px 4px #e2e2e2,
+        inset 2px 2px 4px #b1b1b1, inset -2px -2px 4px #e2e2e2;
+}
+
 .userIconWrapper{
     position: absolute;
     display: flex;

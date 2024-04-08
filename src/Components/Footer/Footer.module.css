@@ -35,22 +35,19 @@
 .control {
     position: absolute;
     top: -2vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.control::after {
-    content: '';
     width: 98%;
     height: 4px;
     border-radius: 2px;
     background: linear-gradient(145deg, #333333, #222222);
     box-shadow: 1px 1px 2px #040404, -0.5px -0.5px 2px #929292;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
 }
+
 
 @media screen and (max-width:767px) {
 

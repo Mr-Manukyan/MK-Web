@@ -17,6 +17,7 @@
 
 .inputGroup input[type="checkbox"]+label .darkIcon {
     opacity: .3;
+    color: black;
 }
 
 .inputGroup input[type="checkbox"]:checked+label {
@@ -24,6 +25,8 @@
         inset 10px 0 8px #171717,
         inset -2px 0 8px #494949;
 }
+
+
 
 .inputGroup input[type="checkbox"]:checked+label .lightIcon {
     opacity: .3;
@@ -50,9 +53,16 @@
     padding: 0 10px;
     transition: box-shadow .3s ease-in;
     cursor: pointer;
-    /* background: #222222; */
+
 }
 
+
+#light label {
+     background: linear-gradient(90deg, #eeeeee, #b1b1b1);
+    box-shadow:
+            inset 2px 0 8px #b1b1b1,
+            inset -10px 0 8px #e0e0e0;
+}
 .inputGroup label .innerContent {
      display: flex;
      justify-content: space-between;

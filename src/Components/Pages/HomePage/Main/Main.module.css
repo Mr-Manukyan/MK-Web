@@ -93,23 +93,20 @@
 }
 
 .control {
-    min-width: 25px;
     height: 100%;
+    width: 4px;
+    margin: 0px 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.control::after {
-    content: '';
-    width: 4px;
-    height: 100%;
     border-radius: 2px;
+    overflow: hidden;
     background: linear-gradient(145deg, #333333, #222222);
     box-shadow: 1px 1px 2px #040404, -0.5px -0.5px 2px #929292;
-    overflow: hidden;
 }
+
+
 
 @media screen and (max-width:1049px) {
  

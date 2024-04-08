@@ -8,7 +8,7 @@ export const DayAndNight = () => {
     const { theme, toggleTheme } = useTheme();
 
     return (
-        <div className={style.inputGroup}>
+        <div className={style.inputGroup} id={theme === 'light' ? style.light : ''}>
             <input type="checkbox" id="mode" className={style.inputStyle}
                 checked={theme === 'dark' ? true : false}
                 onChange={toggleTheme}

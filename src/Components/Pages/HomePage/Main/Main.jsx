@@ -1,4 +1,4 @@
-import { BombText } from '../../../Common/BombText/BombText'
+import { CirclePit } from '../../../Common/CirclePit/CirclePit'
 import { UserAvatar } from '../../../Common/UserAvatar/UserAvatar'
 import { TypeAnimation } from 'react-type-animation';
 import { useTheme } from '../../../../Hooks/hooks';
@@ -22,12 +22,20 @@ export const Main = () => {
                 <div className={style.leftContentWrapper}>
 
                     <div className={style.nameWrapper}>
-                        <p className={style.infoName}>Hello, my name is`</p>
+                        <p className={style.infoName} style={
+                            {
+                                color: theme === 'light' ? lightColor.text : '',
+                            }
+                        }>Hello, my name is`</p>
                         <p className={style.name}>Karen Manukyan</p>
                     </div>
 
                     <div className={style.professionWrapper}>
-                        <p className={style.profession}>I am a</p>
+                        <p className={style.profession} style={
+                            {
+                                color: theme === 'light' ? lightColor.text : '',
+                            }
+                        }>I am a</p>
                         <div className={style.professionAnimeWrapper}>
 
                             <TypeAnimation
@@ -47,7 +55,13 @@ export const Main = () => {
                     </div>
                 </div>
             </div>
-            <div className={style.control}></div>
+            <div className={style.control} style={
+                {
+                    background: theme === 'light' ? lightColor.controlBG : '',
+                    boxShadow: theme === 'light' ? lightColor.controlBoxShadow : ''
+
+                }
+            }></div>
             <div className={style.rightContent} style={
                 {
                     background: theme === 'light' ? lightColor.bg : '',
@@ -56,10 +70,10 @@ export const Main = () => {
                 }
             }>
                 <UserAvatar />
-                <BombText left='20px' top='20px' />
-                <BombText left='20px' bottom='20px' />
-                <BombText right='20px' top='20px' />
-                <BombText bottom='20px' right='20px' />
+                <CirclePit left='20px' top='20px' />
+                <CirclePit left='20px' bottom='20px' />
+                <CirclePit right='20px' top='20px' />
+                <CirclePit bottom='20px' right='20px' />
             </div>
         </div>
     )
