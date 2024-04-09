@@ -15,11 +15,6 @@ import './App.css';
 // const SkillsPageLazy = withSuspense(SkillsPage)
 
 
-
-
-
-
-
 const App = () => {
 
     const location = useLocation()
@@ -41,12 +36,9 @@ const App = () => {
                         <Route exact path='/contactMe' element={<ContactMePage />} />
                         <Route path='*' element={<NotFoundPage />} />
                     </Routes>
-
                 </>
             </AnimatePresence>
-
             <Footer />
-
         </div>
     );
 }
