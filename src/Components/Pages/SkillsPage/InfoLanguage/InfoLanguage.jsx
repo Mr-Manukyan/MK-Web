@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import style from './InfoLanguage.module.css'
+import { useTheme } from '../../../../Hooks/hooks'
 
 const stars = {
     Eng: [
@@ -105,11 +106,13 @@ const starsAnime = {
 }
 
 export const InfoLanguage = () => {
+    const { theme } = useTheme()
     return (
-        <div className={style.languageContainer}>
+        <div className={style.languageContainer} id={theme === 'light' ? style.light : ''}>
 
             <div className={style.languageInfoWrapper}>
                 <motion.p className={style.language}
+                    id={theme === 'light' ? style.lightLanguage : ''}
                     initial='hidden'
                     variants={languageAnime}
                     whileInView="visible"
@@ -117,7 +120,8 @@ export const InfoLanguage = () => {
                     transition={{ duration: .4, }}
                 >English</motion.p>
                 {stars.Eng.map((star, i) => (
-                    <motion.p key={i} className={star.active ? style.active : style.star}
+                    <motion.p key={i} className={star.active ? style.active : theme === 'light' ? style.lightStar : style.darkStar}
+
                         initial='hidden'
                         variants={starsAnime}
                         whileInView="visible"
@@ -129,6 +133,7 @@ export const InfoLanguage = () => {
             </div>
             <div className={style.languageInfoWrapper}>
                 <motion.p className={style.language}
+                    id={theme === 'light' ? style.lightLanguage : ''}
                     initial='hidden'
                     variants={languageAnime}
                     whileInView="visible"
@@ -137,7 +142,7 @@ export const InfoLanguage = () => {
                 >Russian
                 </motion.p>
                 {stars.Rus.map((star, i) => (
-                    <motion.p key={i} className={star.active ? style.active : style.star}
+                    <motion.p key={i} className={star.active ? style.active : theme === 'light' ? style.lightStar : style.darkStar}
                         initial='hidden'
                         variants={starsAnime}
                         whileInView="visible"
@@ -148,6 +153,7 @@ export const InfoLanguage = () => {
             </div>
             <div className={style.languageInfoWrapper}>
                 <motion.p className={style.language}
+                    id={theme === 'light' ? style.lightLanguage : ''}
                     initial='hidden'
                     variants={languageAnime}
                     whileInView="visible"
@@ -156,7 +162,7 @@ export const InfoLanguage = () => {
                 >Armenian
                 </motion.p>
                 {stars.Arm.map((star, i) => (
-                    <motion.p key={i} className={star.active ? style.active : style.star}
+                    <motion.p key={i} className={star.active ? style.active : theme === 'light' ? style.lightStar : style.darkStar}
                         initial='hidden'
                         variants={starsAnime}
                         whileInView="visible"

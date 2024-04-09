@@ -24,6 +24,11 @@
     margin: 0px 20px;
 
 }
+#lightWebCardContentWrapper{
+    background-color: rgba(255, 255, 255, 0.199);
+    box-shadow: 2px 2px 4px #acacac, -2px -2px 4px #e2e2e2,
+            inset 2px 2px 4px #acacac, inset -2px -2px 4px #e2e2e2;
+}
 
 .webCardWrapper {
     width:85%;
@@ -44,6 +49,17 @@
             inset 0px 0px 0px 0px #0e0e0e;
     cursor: pointer;
 }
+#lightWebCardWrapper{
+    background: linear-gradient(145deg, #c2c2c281, #d8d8d8);
+        box-shadow: -1px -1px 3px 0px #e2e2e2,
+            -1px -1px 2px 0px #e2e2e2,
+            1px 1px 3px 0px #8b8b8b,
+            1px 1px 2px 0px #8b8b8b,
+            inset 0px 0px 0px 0px #e2e2e2,
+            inset 0px 0px 0px 0px #8b8b8b,
+            inset 0px 0px 0px 0px #e2e2e2,
+            inset 0px 0px 0px 0px #8b8b8b;
+}
 
 .imageWrapper{
     width: 85%;
@@ -54,6 +70,10 @@
    justify-content: center;
    align-items: center;
 
+}
+
+#lightImageWrapper{
+    box-shadow: inset 5px 5px 10px #8b8b8b, inset -5px -5px 10px #e2e2e2;
 }
 .webImg {
     width: 90%;
@@ -72,6 +92,13 @@
     flex-direction: column;   
 }
 
+#lightTextInfoWrapper {
+    background-color: rgba(202, 202, 202, 0.2);
+    box-shadow: inset 5px 5px 10px #8b8b8b, inset -5px -5px 10px #e2e2e2;
+}
+
+
+
 .text{
         margin: 5px;
         display: flex;
@@ -83,10 +110,14 @@
         letter-spacing: 2px;
         font-weight: 700;
 }
+#lightText{
+    color: rgb(68, 68, 68);
+}
 
 .description{
-    color: rgba(255, 52, 52, 0.527);
+    color: rgba(255, 52, 52, 0.699);
 }
+
 
 @media screen and (max-width:399px) {
 .webCardContentWrapper {

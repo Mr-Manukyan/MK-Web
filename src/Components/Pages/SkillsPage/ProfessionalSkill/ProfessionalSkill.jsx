@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { useInView } from 'react-intersection-observer'
 import style from './ProfessionalSkill.module.css';
+import { useTheme } from '../../../../Hooks/hooks';
 
 
 export const ProfessionalSkill = ({ percentNum = 78, name }) => {
-
+    const { theme } = useTheme()
     const { ref, inView } = useInView({
         threshold: 1,
         triggerOnce: true
@@ -29,9 +30,9 @@ export const ProfessionalSkill = ({ percentNum = 78, name }) => {
 
 
     return (
-        <div className={style.container} ref={ref}>
-            <div className={style.circleContainer}>
-                <div className={style.circleWrapper}>
+        <div className={style.container} ref={ref} id={theme === 'light' ? style.light : ''}>
+            <div className={style.circleContainer} id={theme === 'light' ? style.lightcircleContainer : ''} >
+                <div className={style.circleWrapper} id={theme === 'light' ? style.light : ''}>
                     <svg className={style.svgCircle} viewBox="0 0 100 100">
                         <circle
                             className={style.percentCircle}
@@ -42,10 +43,10 @@ export const ProfessionalSkill = ({ percentNum = 78, name }) => {
 
                         />
                     </svg>
-                    <p className={style.percent}>{percent}%</p>
+                    <p className={style.percent} id={theme === 'light' ? style.lightPercent : ''}>{percent}%</p>
                 </div>
             </div>
-            <p className={style.professionName}>{name}</p>
+            <p className={style.professionName} id={theme === 'light' ? style.lightName : ''}>{name}</p>
         </div>
     );
 };

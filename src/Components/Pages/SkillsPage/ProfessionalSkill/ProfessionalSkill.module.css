@@ -11,6 +11,13 @@
     box-shadow: inset 5px 5px 10px #0e0e0e, inset -5px -5px 10px #363636;
     margin: 10px;
 }
+
+#light{
+  background: #e7e7e7;
+  box-shadow: inset 5px 5px 10px #8b8b8b,
+    inset -5px -5px 10px #e2e2e2; 
+}
+
 .circleContainer {
     width: 65px;
     height: 65px;
@@ -24,6 +31,18 @@
             inset 0px 0px 0px 0px #0e0e0e, inset 0px 0px 0px 0px #363636,
             inset 0px 0px 0px 0px #0e0e0e;
 
+}
+
+#lightcircleContainer{
+background: linear-gradient(145deg, #b1b1b1, #e2e2e2);
+box-shadow:-1px -1px 3px 0px #e2e2e2,
+    -1px -1px 2px 0px #e2e2e2,
+    1px 1px 3px 0px #d4d4d4,
+    1px 1px 2px 0px #d4d4d4,
+    inset 0px 0px 0px 0px #e2e2e2,
+    inset 0px 0px 0px 0px #d4d4d4,
+    inset 0px 0px 0px 0px #e2e2e2,
+    inset 0px 0px 0px 0px #d4d4d4;
 }
 
 .circleWrapper {
@@ -72,11 +91,20 @@
         inset 2px 2px 4px #0e0e0e, inset -2px -2px 4px #363636;
   
 }
+#lightPercent{
+    color: rgb(0, 0, 0);
+    background-color: #e7e7e7;
+    box-shadow: 2px 2px 4px #b1b1b1, -2px -2px 4px #e2e2e2,
+            inset 2px 2px 4px #b1b1b1, inset -2px -2px 4px #e2e2e2;
+}
 
 .professionName{
     margin-top: 5px;
     font-size: 14px;
     color: rgb(211, 211, 211);
+}
+#lightName {
+    color: rgb(0, 0, 0);
 }
 
 @media(max-width:1300px) {

@@ -4,8 +4,10 @@ import { useRef, useEffect, useState } from 'react'
 import { WebCard } from './WebCard/WebCard'
 import { portfolioData } from './portfolioData'
 import style from './PortFolioPage.module.css'
+import { useTheme } from '../../../Hooks/hooks'
 
 export const PortFolioPage = () => {
+    const { theme } = useTheme()
     const [bannerRect, setBannerRect] = useState(null);
     const bannerRef = useRef(null)
 
@@ -18,8 +20,8 @@ export const PortFolioPage = () => {
     return (
         <AnimatedPage>
             <div className={style.container}>
-                <div className={style.contentWrapper}>
-                    <h3 className={style.webCardParagraph}>My Works</h3>
+                <div className={style.contentWrapper} id={theme === 'light' ? style.light : ''}>
+                    <h3 className={style.webCardParagraph} id={theme === 'light' ? style.lightParagraph : ''}>My Works</h3>
                     <div className={style.webCardContainer} ref={bannerRef}>
                         {bannerRect && <BubblesEffect bannerRect={bannerRect} />}
                         <div className={style.webCardWrapper}>

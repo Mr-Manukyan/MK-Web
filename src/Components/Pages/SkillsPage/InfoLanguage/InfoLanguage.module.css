@@ -11,6 +11,11 @@
     box-shadow: inset 5px 5px 10px #0e0e0e, inset -5px -5px 10px #363636;
 }
 
+#light {
+    background-color: #e7e7e7;
+    box-shadow: inset 5px 5px 10px #8b8b8b, inset -5px -5px 10px #e2e2e2;
+}
+
 
 .languageInfoWrapper{
     min-width: 190px;
@@ -29,11 +34,25 @@
 
 }
 
+#lightLanguage{
+    color: rgb(0, 0, 0);
+}
 
-.star {
+
+.darkStar {
+    color: white;
     width: auto;
     padding: 1px;
-    color: white;
+    transform: scale(1.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lightStar{
+    color: rgb(100, 100, 100);
+    width: auto;
+    padding: 1px;
     transform: scale(1.1);
     display: flex;
     justify-content: center;

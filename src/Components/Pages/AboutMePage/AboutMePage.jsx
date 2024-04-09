@@ -1,6 +1,5 @@
 import { AnimatedPage } from '../../Common/AnimatedPage/AnimatedPage'
 import { hobbiesData } from './hobbiesData'
-import { TypeAnimation } from 'react-type-animation'
 import { Hobbie } from './Hobbies/Hobbie'
 import { CirclePit } from '../../Common/CirclePit/CirclePit'
 import dragon from '../../../Assets/icons/dragon.png'

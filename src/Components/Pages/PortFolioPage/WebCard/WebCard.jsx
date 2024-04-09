@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import style from './WebCard.module.css'
+import { useTheme } from '../../../../Hooks/hooks';
 
 const cardAnimate = {
     hidden: {
@@ -14,6 +15,7 @@ const cardAnimate = {
 }
 
 export const WebCard = ({ data, custom }) => {
+    const { theme } = useTheme()
     const screenWidthSize = window.innerWidth
     return (
         <motion.div className={style.webCardContainer}
@@ -23,19 +25,20 @@ export const WebCard = ({ data, custom }) => {
             custom={custom}
 
         >
-            <div className={style.webCardContentWrapper}>
+            <div className={style.webCardContentWrapper} id={theme === 'light' ? style.lightWebCardContentWrapper : ''} >
                 <motion.a href={data.href}
                     target="_blank"
                     className={style.webCardWrapper}
+                    id={theme === 'light' ? style.lightWebCardWrapper : ''}
                     initial={{ y: 0 }}
                     whileHover={{ y: -50, transition: 0.4 }}
                     exit={{ y: 0 }}
                 >
-                    <div className={style.imageWrapper}>
+                    <div className={style.imageWrapper} id={theme === 'light' ? style.lightImageWrapper : ''} >
                         <img src={data.img} alt="webSiteImg" className={style.webImg} />
                     </div>
-                    <div className={style.textInfoWrapper}>
-                        <p className={style.text}>{data.name}</p>
+                    <div className={style.textInfoWrapper} id={theme === 'light' ? style.lightTextInfoWrapper : ''} >
+                        <p className={style.text} id={theme === 'light' ? style.lightText : ''} >{data.name}</p>
                         <p className={style.description}>{`( ${data.description} )`}</p>
                     </div>
                 </motion.a>
