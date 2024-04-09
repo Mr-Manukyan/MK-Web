@@ -32,12 +32,12 @@ ul #lightActive {
 }
      
 ul #lightActive:hover {
-    color: rgb(255, 14, 14);
+    color: rgb(255, 53, 53);
     transition: color .2s ease;
 }
 
 ul li a:hover{
-    color: rgb(255, 0, 0);
+    color: rgb(255, 53, 53);
     transition: color .2s ease;
 }
 

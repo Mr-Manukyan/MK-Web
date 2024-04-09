@@ -1,6 +1,7 @@
 import React from 'react'
 import { Loading } from '../Loading/Loading'
 
+
 export const withSuspense = (Component) => {
   return (props) => {
     return (

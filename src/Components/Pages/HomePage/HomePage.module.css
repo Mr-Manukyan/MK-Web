@@ -12,6 +12,7 @@
     -webkit-user-select: none;
     -ms-user-select: none;
     position: relative;
+    z-index: 1;
 }
 
 

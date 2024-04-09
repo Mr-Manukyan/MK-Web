@@ -1,6 +1,5 @@
-import React from 'react'
-import style from './AnimatedPage.module.css'
 import { motion } from 'framer-motion'
+import style from './AnimatedPage.module.css'
 
 const animationsTop = {
   initial: {
@@ -19,7 +18,7 @@ const animationsTop = {
 
 
 export const AnimatedPage = ({ children, duration = 0.4 }) => {
-  const screenWidthSize = window.innerWidth
+  // const screenWidthSize = window.innerWidth
   return (
     <motion.div
       className={style.animateContainer}
@@ -27,7 +26,7 @@ export const AnimatedPage = ({ children, duration = 0.4 }) => {
       animate='animate'
       exit='exit'
       variants={animationsTop}
-      transition={{ duration, delay: screenWidthSize < 720 ? 0.5 : 0 }}
+      transition={{ duration }}
     >
       {children}
     </motion.div>

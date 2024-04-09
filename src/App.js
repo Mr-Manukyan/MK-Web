@@ -7,9 +7,17 @@ import { AboutMePage } from './Components/Pages/AboutMePage/AboutMePage';
 import { SkillsPage } from './Components/Pages/SkillsPage/SkillsPage';
 import { PortFolioPage } from './Components/Pages/PortFolioPage/PortFolioPage';
 import { ContactMePage } from './Components/Pages/ContactMePage/ContactMePage';
-
-import './App.css';
+import { NotFoundPage } from './Components/Pages/NotFoundPage/NotFoundPage';
 import { useTheme } from './Hooks/hooks';
+import './App.css';
+
+// import { withSuspense } from './Components/Common/HOC/withSuspense';
+// const SkillsPageLazy = withSuspense(SkillsPage)
+
+
+
+
+
 
 
 const App = () => {
@@ -23,18 +31,22 @@ const App = () => {
         }}>
             <Header />
             <AnimatePresence mode='wait' initial={false}>
-                <Routes key={location.pathname} location={location} >
+                <>
+                    <Routes key={location.pathname} location={location} >
 
-                    <Route exact path={'/'} element={<HomePage />} />
-                    <Route exact path='/aboutMe' element={<AboutMePage />} />
-                    <Route exact path='/skills' element={<SkillsPage />} />
-                    <Route exact path='/portfolio' element={<PortFolioPage />} />
-                    <Route exact path='/contactMe' element={<ContactMePage />} />
+                        <Route exact path={'/'} element={<HomePage />} />
+                        <Route exact path='/aboutMe' element={<AboutMePage />} />
+                        <Route exact path='/skills' element={<SkillsPage />} />
+                        <Route exact path='/portfolio' element={<PortFolioPage />} />
+                        <Route exact path='/contactMe' element={<ContactMePage />} />
+                        <Route path='*' element={<NotFoundPage />} />
+                    </Routes>
 
-                    {/* <Route path='*' element={<NotFound />} /> */}
-                </Routes>
+                </>
             </AnimatePresence>
+
             <Footer />
+
         </div>
     );
 }

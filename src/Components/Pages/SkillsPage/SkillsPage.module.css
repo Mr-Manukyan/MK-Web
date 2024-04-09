@@ -5,7 +5,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
-
+    z-index: 1;
 
 }
 
@@ -209,6 +209,7 @@ margin-bottom: 7px;
     margin-top: 10px;
 } 
 
+
 .technicalSkillsContent {
     width: 90%;
     min-height:100%;
@@ -218,22 +219,16 @@ margin-bottom: 7px;
     justify-content: space-between;
     align-items: center;
     scroll-snap-align:center;
-    border: 1px solid #363636;
     margin-bottom:20px;
-
 }
 
 .professionalSkillsContent {
     width: 90%;
     min-height: 100%;
-    border: 1px solid #363636;
+    border-bottom: 0.5px solid #3b3b3b;
     scroll-snap-align: center;
  
 }
-/* .professionalSkillsWrapper{
-    width: 98%;
-} */
-
 
 }
 

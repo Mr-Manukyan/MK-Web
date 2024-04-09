@@ -1,10 +1,15 @@
+import { useTheme } from '../../../Hooks/hooks'
 import style from './Loading.module.css'
-import logoIcon from '../../../Assets/icons/logo.png'
 
-export const Loading = () => {
+
+export const Loading = ({ zIndex = 0, name = 'MK' }) => {
+  const { theme } = useTheme()
   return (
-    <div className={style.container}>
-      <img src={logoIcon} alt='logoIcon' className={style.logoIcon} />
+    <div className={style.container} style={{ zIndex: zIndex }}>
+      <div className={style.wrapper}>
+        <span className={style.text} id={theme === 'light' ? style.lightText : ''}>{name}</span>
+        <div className={style.spinner} id={theme === 'light' ? style.lightSpinner : ''}></div>
+      </div>
     </div>
   )
 }

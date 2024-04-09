@@ -3,6 +3,7 @@ import { AnimatedPage } from '../../Common/AnimatedPage/AnimatedPage'
 import style from './HomePage.module.css'
 
 
+
 export const HomePage = () => {
     return (
         <AnimatedPage>
