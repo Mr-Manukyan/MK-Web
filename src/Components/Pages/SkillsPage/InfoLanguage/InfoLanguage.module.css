@@ -31,6 +31,9 @@
     color: rgb(155, 155, 155);
     font-size: calc(15px + 3 * ((100vw - 320px) / (1280 - 320)));
     margin-right: 20px;
+    font-family: "Quantico", sans-serif;
+    font-weight: 400;
+    font-style: italic;
 
 }
 

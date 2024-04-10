@@ -48,6 +48,9 @@
         box-shadow: inset 5px 5px 10px #0e0e0e, inset -5px -5px 10px #363636;
         position: absolute;
         top: 10px;
+    font-family: "Rubik Moonrocks", sans-serif;
+    font-weight: 400;
+    font-style: italic;
 }
 
 #lightParagraph {

@@ -38,6 +38,10 @@
     font-size: 25px;
     text-align: center;
     margin-bottom: 10px;
+    letter-spacing: 1px;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-style: italic;
 }
 
 .name {
@@ -47,6 +51,11 @@
     text-align: center;
     padding: 5px 20px;
     border-radius: 5px;
+    word-spacing: 5px;
+    font-family: "Trade Winds", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  
 }
 .professionWrapper{
     position: relative;
@@ -71,11 +80,17 @@
     color: rgb(230, 230, 230);
     font-size: 23px;
     margin-right: 20px;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-style: italic;;
 }
 .textTypeing{
     color:rgb(255, 49, 49);
     font-size: 30px;
     position: absolute;
+    font-family: "Playfair Display", serif;
+        font-optical-sizing: auto;
+        font-style: italic;;
 }
 
 

@@ -37,6 +37,10 @@
         1px 1px 2px #0e0e0e;
     box-shadow: inset 5px 5px 10px #0e0e0e, inset -5px -5px 10px #363636;
     margin-bottom: 15px;
+    font-family: "Rubik Moonrocks", sans-serif;
+    font-weight: 400;
+    font-style: italic;; 
+
 }
 
 #light{
@@ -180,11 +184,18 @@
     height: 85%;
     margin-bottom: 10px;
     text-align:justify;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .message {
     color: aliceblue;
-    font-size: 16px;
+    font-size: 17px;
+    font-family: "Quantico", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+    
 }
 #lightMessage{
     color: rgb(0, 0, 0);
@@ -258,7 +269,10 @@
     padding-bottom: 5px;
     border-bottom: 1px solid rgba(255, 49, 49, 0.486);
     text-align: center;
-    margin-bottom: 10px;
+    margin: 10px 0px;
+    font-family: "Trade Winds", system-ui;
+    font-weight: 400;
+    font-style: normal;
 }
 
 #lightParagraphMotto{
@@ -274,7 +288,10 @@
     padding-bottom: 5px;
     border-bottom: 1px solid rgba(255, 49, 49, 0.486);
     text-align: center;
-    margin-top: 15%;
+    margin-top: 8%;
+    font-family: "Trade Winds", system-ui;
+    font-weight: 400;
+    font-style: normal;
 }
 
 #lightParagraphHobbies {
@@ -309,6 +326,9 @@
 .motto{
     color: aliceblue;
     text-align: center;
+    font-family: "Quantico", sans-serif;
+        font-weight: 400;
+        font-style: italic;
 }
 #lightMotto{
     color: rgb(29, 29, 29);
@@ -420,11 +440,9 @@
     width: 120px;
     height: 120px; 
 }
-.message {
-    font-size: 10px;
-}
- .lightMessage {
-     font-size: 10px;
+
+ .paragraphHobbies {
+     margin-top: 15%;
  }
 }
 
@@ -438,11 +456,8 @@
 
 @media screen and (max-width:394px) {
 .message {
-        font-size: 9px;
-    }
-         .lightMessage {
-             font-size: 9px;
-         }
+    font-size: 11px;
+}
 }
 
 

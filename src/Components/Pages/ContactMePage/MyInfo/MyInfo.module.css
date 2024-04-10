@@ -61,8 +61,11 @@
     font-size: 18px;
     letter-spacing: 1px;
     font-weight: 600;
-    border-bottom: 1px solid rgba(255, 49, 49, 0.507);
+    /* border-bottom: 1px solid rgba(255, 49, 49, 0.507); */
     margin-left: 30px;
+        font-family: "Quantico", sans-serif;
+            font-weight: 400;
+            font-style: italic;
 }
 
 #lightInfo {

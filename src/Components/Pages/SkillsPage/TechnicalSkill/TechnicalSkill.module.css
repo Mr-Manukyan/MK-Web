@@ -68,12 +68,15 @@
 
 .technicalName{
     color: rgb(155, 155, 155);
-    font-size: 13px;
+    font-size: 12px;
     margin: 0px 10px;
     min-width:70px;
     display: flex;
     justify-content:flex-start;
     align-items:center;
+        font-family: "Quantico", sans-serif;
+            font-weight: 400;
+            font-style: italic;
 }
 
 #lightName{

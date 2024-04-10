@@ -71,6 +71,9 @@ ul li a {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: "Quantico", sans-serif;
+    font-weight: 400;
+    font-style: italic;
 }
 
 

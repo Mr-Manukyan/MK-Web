@@ -35,7 +35,7 @@ export const Main = () => {
                             {
                                 color: theme === 'light' ? lightColor.text : '',
                             }
-                        }>I am a</p>
+                        }>I am a`</p>
                         <div className={style.professionAnimeWrapper}>
 
                             <TypeAnimation

@@ -38,6 +38,7 @@ export const ContactMePage = () => {
                         <div className={style.control} id={theme === 'light' ? style.lightControl : ''} ></div>
                         <div className={style.content} id={theme === 'light' ? style.lightContent : ''}>
                             <div className={style.wrapper}>
+                                <p className={style.info} id={theme === 'light' ? style.lightInfo : ''}>My Info</p>
                                 {myInfoData.map(info => <MyInfo key={info.id} info={info} />)}
                             </div>
                         </div>

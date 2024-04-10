@@ -57,8 +57,6 @@ export const AboutMePage = () => {
                                             Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum
                                             et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC.
                                             This book is a treatise on the theory of ethics, very popular during the Renaissance.
-                                            The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..",
-                                            comes from a line in section 1.10.32.
                                         </p>
                                     </div>
                                 </div>
@@ -77,7 +75,7 @@ export const AboutMePage = () => {
                                     <div className={style.hobbiesWrapper}>
 
                                         <div className={style.mottoBody}>
-                                            <p className={style.paragraphMotto} id={theme === 'light' ? style.lightParagraphMotto : ''} >My motto</p>
+                                            <p className={style.paragraphMotto} id={theme === 'light' ? style.lightParagraphMotto : ''}>My motto</p>
                                             <p className={style.motto} id={theme === 'light' ? style.lightMotto : ''}>If no one could do it,I will be the first one to pull that off.</p>
 
                                         </div>
