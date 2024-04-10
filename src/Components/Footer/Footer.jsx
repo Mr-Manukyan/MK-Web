@@ -12,13 +12,13 @@ export const Footer = () => {
     return (
 
         <div className={style.footerContainer}>
-            <div className={style.control} style={
+            {/* <div className={style.control} style={
                 {
                     background: theme === 'light' ? lightColor.controlBG : '',
                     boxShadow: theme === 'light' ? lightColor.controlBoxShadow : ''
 
                 }
-            }></div>
+            }></div> */}
             <div className={style.footerContent} style={
                 {
                     background: theme === 'light' ? lightColor.bgFooter : '',

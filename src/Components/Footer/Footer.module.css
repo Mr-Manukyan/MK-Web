@@ -5,7 +5,7 @@
     justify-content: center;
     align-items: center;
     /* position:sticky; */
-    position:absolute;
+    position:fixed;
     left: 0;
     bottom: 0;
 }
@@ -32,8 +32,10 @@
 
 }
 
-.control {
-    position: absolute;
+/* .control {
+    position:fixed;
+    left: 0;
+    top: 0;
     top: -2vh;
     width: 98%;
     height: 4px;
@@ -46,7 +48,7 @@
     flex-direction: column;
     justify-content: center;
 
-}
+} */
 
 
 @media screen and (max-width:767px) {
