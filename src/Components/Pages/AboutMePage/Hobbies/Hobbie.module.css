@@ -113,3 +113,30 @@
            }
 }
 
+
+@media screen and (max-height:699px) {
+.container {
+        min-width: 65px;
+        padding: 7px;
+        margin: 5px;
+    }
+
+    .body {
+        width: 35px;
+        height: 35px;
+    }
+
+    .hobbieIcon {
+        max-width: 60%;
+        max-height: 60%;
+    }
+
+    .hobbieName {
+        font-size: 10px;
+    }
+
+    #lightHobbieName {
+        font-size: 10px;
+    }
+}
+

@@ -217,3 +217,11 @@
  }
 
 }
+
+
+@media screen and (max-height: 699px) {
+    .mainContainer {
+        width: 97%;
+        height: 88%;
+    }
+}

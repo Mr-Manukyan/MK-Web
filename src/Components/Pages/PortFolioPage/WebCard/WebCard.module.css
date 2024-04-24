@@ -105,7 +105,7 @@
         justify-content: center;
         align-items: center;
         font-size: 20px;
-        word-spacing: 7x;
+        word-spacing: 7px;
         font-family: 'Poppins', sans-serif;
         color: rgba(255, 255, 255, 0.747);
         letter-spacing: 2px;
@@ -133,6 +133,27 @@
         margin: 0px 0px;
     }
 
+}
+
+@media screen and (max-height:699px) {
+.webCardContentWrapper {
+        width: 80%;
+        min-width: 320px;
+        height: 90%;
+        margin: 0px 20px;
+
+    }
+    .text {
+      font-size: 16px;
+    }
+.description {
+   font-size: 13px;
+}
+
+.textInfoWrapper {
+    width: 85%;
+    height: 25%;
+}
 }
 
  

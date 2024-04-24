@@ -232,3 +232,32 @@
 
 }
 
+@media screen and (max-height:699px) {
+    .contentContainer {
+            width: 97%;
+            height: 88%;
+    }
+    .contentWrapper{
+        height: 78%;
+    }
+    .contactParagraph {
+            padding: 10px 25px;
+            font-size: 20px;
+            border-radius: 5px;
+            margin-top: 10px;
+            margin-bottom: 0px;
+        }
+
+        .info {
+        font-size: calc(15px + 3 * ((100vw - 320px) / (1280 - 320)));
+        letter-spacing: 2px;
+        padding-bottom: 5px;
+        margin: 5px 0px;
+    }
+    .wrapper{
+        justify-content: space-evenly;
+    }
+}
+
+  
+

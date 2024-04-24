@@ -80,3 +80,11 @@ ul {
 
 }
 
+
+@media screen and (max-height: 699px) {
+.navNenuContainer {
+        height: 45px;
+        border-radius: 45px;
+    }
+}
+

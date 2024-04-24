@@ -104,4 +104,21 @@
     height: 19px;
 }
 }
+
+@media screen and (max-height: 699px) {
+.inputGroup label {
+        width: 53px;
+        height: 30px;
+    
+    }
+
+    .inputGroup .lightIcon svg,
+    .inputGroup .darkIcon svg {
+        width: 15px;
+        height: 15px;
+    }
+    .inputGroup .lightIcon svg {
+       margin-right: 5px;
+    }
+}
     

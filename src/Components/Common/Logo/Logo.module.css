@@ -29,4 +29,16 @@
 }
 }
 
+@media screen and (max-height: 699px) {
+.wrapper {
+        width: 45px;
+        height: 45px;
+        margin-top: 3px;
+    }
+.logo {
+    width: 40px;
+    height: 40px;
+}
+}
+
 

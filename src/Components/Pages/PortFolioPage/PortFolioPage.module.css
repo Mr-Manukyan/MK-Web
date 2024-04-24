@@ -111,6 +111,26 @@
 }
 }
 
+@media screen and (max-height:699px) {
+    .contentWrapper {
+            width: 97%;
+            height: 88%;
+    }
+
+    .webCardParagraph {
+        padding: 10px 25px;
+        font-size: 20px;
+        border-radius: 5px;
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
+
+    .webCardWrapper{
+        height: 80%;
+        margin-top: 30px;
+    }
+}
+
 
 
 

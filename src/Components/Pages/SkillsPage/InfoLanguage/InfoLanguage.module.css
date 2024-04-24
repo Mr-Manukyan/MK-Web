@@ -94,3 +94,28 @@
             margin-right: 5px;
         }
 }
+
+@media screen and (max-height:699px) {
+   .darkStar {
+        padding: 1px;
+        transform: scale(0.9);
+ 
+    }
+    .active {
+            padding: 1px;
+            transform: scale(1);
+        }
+    
+        .language {
+            display: flex;
+            align-items: flex-end;
+            justify-content:flex-start;
+            margin-right: 5px;
+            font-size: calc(13px + 3 * ((100vw - 320px) / (1280 - 320)));
+        }
+
+        .languageContainer{
+           margin-top: 0;
+        }
+                
+}

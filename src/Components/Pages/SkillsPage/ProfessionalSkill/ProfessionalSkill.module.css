@@ -132,3 +132,31 @@ box-shadow:-1px -1px 3px 0px #e2e2e2,
     font-size: 10px;
 }
 }
+
+@media screen and (max-height:699px) {
+    .container {
+        min-width: 90px;
+        padding: 10px;
+        margin: 5px;
+    }
+.circleContainer {
+        width: 45px;
+        height: 45px;
+    }
+
+    .circleWrapper {
+        position: relative;
+        width: 38px;
+        height: 38px;
+        margin: 0 auto;
+    }
+
+    .percent {
+        width: 27px;
+        height: 27px;
+        font-size: 10px;
+    }
+    .professionName{
+        font-size: 10px;
+    }
+}

@@ -107,3 +107,12 @@
 
 }
 
+@media screen and (max-height:699px) {
+    .iconWrapper {
+            min-width: 23px;
+            min-height: 23px;
+            margin-right: 5px;
+    }
+}
+
+

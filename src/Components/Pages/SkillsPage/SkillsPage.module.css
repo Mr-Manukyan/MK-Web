@@ -83,7 +83,7 @@ margin-bottom: 7px;
 }
 
 .technicalSkillsContent{
-    width: 47%;
+    width: 48%;
     height: 96%;
     border-radius: 18px;
     display: flex;
@@ -113,7 +113,7 @@ margin-bottom: 7px;
 
 
 .professionalSkillsContent {
-    width: 47%;
+    width: 48%;
     height: 96%;
     border-radius: 18px;
     display: flex;
@@ -241,7 +241,31 @@ margin-bottom: 7px;
 }
 
 
+@media screen and (max-height:699px) {
+    .mainWrapper {
+        width: 97%;
+        height: 88%;
+    }
 
+    .skillsParagraph {
+        padding: 10px 25px;
+        font-size: 20px;
+        margin-bottom: 0px;
+    }
+    .skillsParagraphWrapper{
+        margin-top: 18px;
+    }
+    .skillsContent{
+        height: 100%;
+    }
+
+    .paragraph {
+        font-size: calc(15px + 3 * ((100vw - 320px) / (1280 - 320)));
+        letter-spacing: 2px;
+        padding-bottom: 5px;
+        margin: 5px 0px;
+    }
+}
 
 
 

@@ -10,4 +10,11 @@
     box-shadow: inset 5px 5px 10px #0e0e0e, inset -5px -5px 10px #363636;
 }
 
+@media screen and (max-height:699px) {
+    .circle {
+         height: 30px;
+         width: 30px;
+    }
+}   
+
 

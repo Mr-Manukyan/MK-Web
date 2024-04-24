@@ -137,3 +137,9 @@ ul li {
             font-weight: 700;
         }
 }
+
+@media screen and (max-height: 699px) {
+ul li {
+        height: 38px;
+    }
+}
