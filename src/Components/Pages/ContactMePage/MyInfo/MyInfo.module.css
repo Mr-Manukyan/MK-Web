@@ -3,7 +3,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    margin: 5px 0px;
+    /* margin-top: 50px; */
 }
 
 .bodyInfo {
@@ -182,8 +183,8 @@
     }
 }
 
-@media screen and (max-height:699px) {
+/* @media screen and (max-height:699px) {
     .body {
             margin-top: 0px;
         }    
-}
+} */
