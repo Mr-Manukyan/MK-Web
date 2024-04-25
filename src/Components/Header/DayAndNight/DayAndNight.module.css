@@ -92,6 +92,24 @@
     transform: rotate(-90deg);
 }
 
+@media screen and (max-height: 1023px) {
+    .inputGroup label {
+        width: 48px;
+        height: 28px;
+
+    }
+
+    .inputGroup .lightIcon svg,
+    .inputGroup .darkIcon svg {
+        width: 13px;
+        height: 13px;
+    }
+
+    .inputGroup .lightIcon svg {
+        margin-right: 5px;
+    }
+}
+
 @media screen and (max-width:767px) {
     .inputGroup label {
             width: 66px;
@@ -105,20 +123,5 @@
 }
 }
 
-@media screen and (max-height: 699px) {
-.inputGroup label {
-        width: 48px;
-        height: 28px;
-    
-    }
 
-    .inputGroup .lightIcon svg,
-    .inputGroup .darkIcon svg {
-        width: 13px;
-        height: 13px;
-    }
-    .inputGroup .lightIcon svg {
-       margin-right: 5px;
-    }
-}
     
