@@ -63,10 +63,9 @@
         object-fit: cover;
 }
 
-@media(max-width:1023px) {
+
+@media(max-width:1450px) {
 .ripple {
-        width: 13vw;
-        height: 13vw;
         min-height: 150px;
         min-width: 150px;
        
