@@ -64,7 +64,7 @@
 }
 
 
-@media(max-width:1450px) {
+@media(max-width:1599px) {
 .ripple {
         min-height: 150px;
         min-width: 150px;
@@ -80,12 +80,10 @@
     }
 }
 
-@media(max-width:599px) {
+@media(max-width:1599px) {
     .ripple {
-
-        min-height: 150px;
-        min-width: 150px;
-
+        width: 12vw;
+        height: 12vw;
     }
 }
 
