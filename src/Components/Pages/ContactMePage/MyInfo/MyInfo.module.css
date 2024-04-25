@@ -100,6 +100,18 @@
     }
 }
 
+@media screen and (max-width:1024px) {
+    .iconWrapper {
+        min-width: 35px;
+        min-height: 35px;
+    }
+
+    .icon {
+        width: 30px;
+        height: 30px;
+    }
+}
+
 
 @media screen and (max-width:959px) {
 
@@ -142,6 +154,7 @@
     }
 }
 
+
 @media screen and (max-width:539px) {
 
 
@@ -162,6 +175,7 @@
     }
 }
 
+
 @media screen and (max-width:449px) {
 
     .info {
@@ -179,10 +193,5 @@
     }
 }
 
-@media screen and (max-height: 719px) {
-    .iconWrapper {
-        min-width: 35px;
-        min-height: 35px;
-    }
-}
+
 
