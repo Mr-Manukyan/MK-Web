@@ -241,7 +241,7 @@ margin-bottom: 7px;
 }
 
 
-@media screen and (max-height:704px) {
+@media screen and (max-width: 1599px) and (max-height: 704px) {
     .mainWrapper {
         width: 97%;
         height: 88%;
@@ -266,6 +266,8 @@ margin-bottom: 7px;
         margin: 5px 0px;
     }
 }
+
+
 
 
 

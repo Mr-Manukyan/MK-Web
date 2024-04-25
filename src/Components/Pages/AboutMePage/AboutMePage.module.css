@@ -341,6 +341,7 @@
 }
 
 
+
 @media screen and (max-width:1079px) {
     .message {
         font-size: 14px;
@@ -526,8 +527,17 @@
     }
 
     .mottoBody {
-        margin-bottom: 25px;
+       margin-bottom: 10%;
     }
+}
+
+@media screen and (max-width: 1281px) and (max-height:801px) {
+.message {
+        font-size: 15px;
+    }
+           .mottoBody {
+               margin-bottom: 10%;
+           }
 }
 
 @media screen and (max-width: 1025px) and (max-height: 704px) {
@@ -556,7 +566,7 @@
     }
 
     .mottoBody {
-        margin-bottom: 5px;
+        margin-bottom: 10%;
     }
 }
 
