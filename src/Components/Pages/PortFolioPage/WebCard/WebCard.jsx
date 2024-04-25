@@ -31,7 +31,7 @@ export const WebCard = ({ data, custom }) => {
                     className={style.webCardWrapper}
                     id={theme === 'light' ? style.lightWebCardWrapper : ''}
                     initial={{ y: 0 }}
-                    whileHover={{ y: -50, transition: 0.4 }}
+                    whileHover={{ y: -20, transition: 0.4 }}
                     exit={{ y: 0 }}
                 >
                     <div className={style.imageWrapper} id={theme === 'light' ? style.lightImageWrapper : ''} >
