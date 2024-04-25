@@ -116,7 +116,7 @@
 
 @media screen and (max-height:704px) {
 .container {
-        min-width: 75px;
+        min-width: 90px;
         padding: 10px;
         margin: 5px;
     }
