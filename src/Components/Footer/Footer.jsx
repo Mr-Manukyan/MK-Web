@@ -28,7 +28,7 @@ export const Footer = () => {
             }>
                 <div className={style.socialBtnWrapper}>
                     {socialNames.map((item, i) => (
-                        <SocialButton name={item.name} href={item.href} key={i} />
+                        <SocialButton name={item.name} href={item.href} key={i} custom={i + 1} />
                     ))}
                 </div>
 

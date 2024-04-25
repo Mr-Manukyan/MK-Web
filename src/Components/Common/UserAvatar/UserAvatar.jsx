@@ -5,7 +5,18 @@ import logo from '../../../Assets/icons/planat.png'
 import userIcon from '../../../Assets/icons/Karen-S.png'
 import { useTheme } from '../../../Hooks/hooks';
 
+const animationsRight = {
+    initial: {
+        opacity: 0,
+        x: '100px',
+        scale: 2
+    },
+    animate: {
+        opacity: 1,
+        x: 0,
+    },
 
+}
 
 export const UserAvatar = () => {
     const { theme } = useTheme()
@@ -16,8 +27,10 @@ export const UserAvatar = () => {
                 <motion.div
                     className={style.ripple}
                     id={theme === 'light' ? style.light : ''}
-                    animate={{ scale: [0, 2], opacity: [1, 1] }}
-                    transition={{ duration: 1 }}
+                    initial='initial'
+                    animate='animate'
+                    variants={animationsRight}
+                    transition={{ duration: 0.5, delay: 0.3 }}
                 >
                     <div className={style.userIconWrapper}>
                         <img src={userIcon} alt="logo" className={style.userIcon} />

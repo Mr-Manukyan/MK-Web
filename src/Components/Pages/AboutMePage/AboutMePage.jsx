@@ -1,11 +1,31 @@
 import { AnimatedPage } from '../../Common/AnimatedPage/AnimatedPage'
 import { hobbiesData } from './hobbiesData'
+import { motion, AnimatePresence } from 'framer-motion';
 import { Hobbie } from './Hobbies/Hobbie'
 import dragon from '../../../Assets/icons/dragon.png'
 import userIcon from '../../../Assets/icons/user.png'
 import { useTheme } from '../../../Hooks/hooks'
 import style from './AboutMePage.module.css'
 
+const rotateAnimeRight = {
+    initial: {
+        x: '-100%'
+    },
+    animate: {
+        x: 0
+    },
+
+}
+
+const rotateAnimeLeft = {
+    initial: {
+        x: '100%'
+    },
+    animate: {
+        x: 0
+    },
+
+}
 
 export const AboutMePage = () => {
     const { theme, lightColor } = useTheme()
@@ -24,13 +44,19 @@ export const AboutMePage = () => {
                     <div className={style.contentWrapper}>
                         <div className={style.messageMain}>
                             <div className={style.messageBody} id={theme === 'light' ? style.lightMessageBody : ''} >
-
-                                <div className={style.imgWrapper} id={theme === 'light' ? style.lightImgWrapper : ''}>
-                                    <div className={style.imgUserContnet} id={theme === 'light' ? style.lightImgUserContnet : ''} >
-                                        <img src={userIcon} alt="userIcon" className={style.userIcon} />
-                                    </div>
-                                </div>
-
+                                <AnimatePresence mode='wait'>
+                                    <motion.div className={style.imgWrapper} id={theme === 'light' ? style.lightImgWrapper : ''}
+                                        initial='initial'
+                                        whileInView='animate'
+                                        viewport={{ amount: 0.5 }}
+                                        variants={rotateAnimeRight}
+                                        transition={{ duration: 0.7, delay: 0.2 }}
+                                    >
+                                        <div className={style.imgUserContnet} id={theme === 'light' ? style.lightImgUserContnet : ''} >
+                                            <img src={userIcon} alt="userIcon" className={style.userIcon} />
+                                        </div>
+                                    </motion.div>
+                                </AnimatePresence>
                                 <div className={style.messageContainer} id={theme === 'light' ? style.lightMessageContainer : ''} >
                                     <div className={style.messageWrapper}>
 
@@ -62,12 +88,19 @@ export const AboutMePage = () => {
                         </div>
                         <div className={style.hobbiesMain}>
                             <div className={style.hobbiesBody} id={theme === 'light' ? style.lightHobbiesBody : ''} >
-
-                                <div className={style.imgWrapper} id={theme === 'light' ? style.lightImgWrapper : ''}>
-                                    <div className={style.imgLogoContnet} id={theme === 'light' ? style.lightImgLogoContnet : ''}>
-                                        <img src={dragon} alt="logoIcon" className={style.dragonIcon} />
-                                    </div>
-                                </div>
+                                <AnimatePresence mode='wait'>
+                                    <motion.div className={style.imgWrapper} id={theme === 'light' ? style.lightImgWrapper : ''}
+                                        initial='initial'
+                                        whileInView='animate'
+                                        viewport={{ amount: 0.5 }}
+                                        variants={rotateAnimeLeft}
+                                        transition={{ duration: 0.7, delay: 0.2 }}
+                                    >
+                                        <div className={style.imgLogoContnet} id={theme === 'light' ? style.lightImgLogoContnet : ''}>
+                                            <img src={dragon} alt="logoIcon" className={style.dragonIcon} />
+                                        </div>
+                                    </motion.div>
+                                </AnimatePresence>
                                 <div className={style.hobbiesContainer} id={theme === 'light' ? style.lightHobbiesContainer : ''} >
                                     <div className={style.hobbiesWrapper}>
 
@@ -80,7 +113,7 @@ export const AboutMePage = () => {
                                         <p className={style.paragraphHobbies} id={theme === 'light' ? style.lightParagraphHobbies : ''}>My Hobbies</p>
                                         <div className={style.hobbiesContent}>
                                             {hobbiesData.map((hobbie, index) => (
-                                                <Hobbie hobbie={hobbie} key={index} />
+                                                <Hobbie hobbie={hobbie} key={index} custom={index + 1} />
                                             ))}
 
                                         </div>

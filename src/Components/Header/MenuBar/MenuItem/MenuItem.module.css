@@ -9,7 +9,10 @@ ul li {
     border-top: 1px solid #353535;
     box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.5);
     cursor: pointer;
+    animation: menu-item-fade-in 3s ease forwards;
 }
+
+
 
 #light{
     background: #e7e7e7;
@@ -143,3 +146,4 @@ ul li {
         height: 38px;
     }
 }
+
