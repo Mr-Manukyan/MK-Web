@@ -100,7 +100,7 @@
     }
 }
 
-@media screen and (max-height:1023px) {
+@media screen and (max-width: 1030px) {
     .iconWrapper {
         min-width: 35px;
         min-height: 35px;
