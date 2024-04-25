@@ -100,12 +100,6 @@
     }
 }
 
-@media screen and (max-width: 1030px) {
-    .iconWrapper {
-        min-width: 35px;
-        min-height: 35px;
-    }
-}
 
 @media screen and (max-width:959px) {
 
@@ -182,6 +176,13 @@
         font-size: 13px;
         font-weight: 500;
         margin-left: 15px;
+    }
+}
+
+@media screen and (max-height: 719px) {
+    .iconWrapper {
+        min-width: 35px;
+        min-height: 35px;
     }
 }
 
