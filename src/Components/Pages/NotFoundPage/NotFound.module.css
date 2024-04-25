@@ -63,3 +63,10 @@
     }
 }
 
+@media screen and (max-height: 704px) {
+    .contentContainer {
+        width: 97%;
+        height: 88%;
+    }
+}
+

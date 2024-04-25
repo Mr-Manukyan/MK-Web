@@ -95,7 +95,7 @@
         }
 }
 
-@media screen and (max-height:699px) {
+@media screen and (max-height:704px) {
    .darkStar {
         padding: 1px;
         transform: scale(0.9);

@@ -133,7 +133,7 @@ box-shadow:-1px -1px 3px 0px #e2e2e2,
 }
 }
 
-@media screen and (max-height:699px) {
+@media screen and (max-height:704px) {
     .container {
         min-width: 90px;
         padding: 10px;
