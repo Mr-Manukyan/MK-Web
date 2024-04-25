@@ -183,8 +183,9 @@
     }
 }
 
-/* @media screen and (max-height:699px) {
-    .body {
-            margin-top: 0px;
-        }    
-} */
+@media screen and (max-height:699px) {
+    .iconWrapper {
+            min-width: 35px;
+            min-height: 35px;
+        }
+}
