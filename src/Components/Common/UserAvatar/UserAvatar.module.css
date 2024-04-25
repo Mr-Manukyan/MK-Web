@@ -86,6 +86,12 @@
         height: 12vw;
     }
 }
+@media(max-width:1281px) {
+    .ripple {
+        width: 14vw;
+        height: 14vw;
+    }
+}
 
 @media(max-width:479px) {
     .ripple {
@@ -105,14 +111,7 @@
     }
 }
 
-@media screen and (max-width: 1025px) and (max-height: 704px) {
-.ripple {
 
-        min-height: 145px;
-        min-width: 145px;
-
-    }
-}
 
 
 
