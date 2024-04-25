@@ -111,8 +111,8 @@
 @media screen and (max-height: 704px) {
 .ripple {
 
-        min-height: 155px;
-        min-width: 155px;
+        min-height: 145px;
+        min-width: 145px;
 
     }
 }

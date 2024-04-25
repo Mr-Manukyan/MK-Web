@@ -116,14 +116,14 @@
 
 @media screen and (max-height:704px) {
 .container {
-        min-width: 65px;
-        padding: 7px;
+        min-width: 75px;
+        padding: 10px;
         margin: 5px;
     }
 
     .body {
-        width: 35px;
-        height: 35px;
+        width: 45px;
+        height: 45px;
     }
 
     .hobbieIcon {
@@ -132,11 +132,11 @@
     }
 
     .hobbieName {
-        font-size: 10px;
+        font-size: 12px;
     }
 
     #lightHobbieName {
-        font-size: 10px;
+        font-size: 12px;
     }
 }
 
