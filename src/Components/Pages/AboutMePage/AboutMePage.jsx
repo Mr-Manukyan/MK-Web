@@ -1,7 +1,6 @@
 import { AnimatedPage } from '../../Common/AnimatedPage/AnimatedPage'
 import { hobbiesData } from './hobbiesData'
 import { Hobbie } from './Hobbies/Hobbie'
-import { CirclePit } from '../../Common/CirclePit/CirclePit'
 import dragon from '../../../Assets/icons/dragon.png'
 import userIcon from '../../../Assets/icons/user.png'
 import { useTheme } from '../../../Hooks/hooks'
@@ -25,8 +24,7 @@ export const AboutMePage = () => {
                     <div className={style.contentWrapper}>
                         <div className={style.messageMain}>
                             <div className={style.messageBody} id={theme === 'light' ? style.lightMessageBody : ''} >
-                                {/* <CirclePit left='4%' top='4%' />
-                                <CirclePit right='4%' top='4%' /> */}
+
                                 <div className={style.imgWrapper} id={theme === 'light' ? style.lightImgWrapper : ''}>
                                     <div className={style.imgUserContnet} id={theme === 'light' ? style.lightImgUserContnet : ''} >
                                         <img src={userIcon} alt="userIcon" className={style.userIcon} />
@@ -64,8 +62,7 @@ export const AboutMePage = () => {
                         </div>
                         <div className={style.hobbiesMain}>
                             <div className={style.hobbiesBody} id={theme === 'light' ? style.lightHobbiesBody : ''} >
-                                {/* <CirclePit left='15px' top='20px' />
-                                <CirclePit right='15px' top='20px' /> */}
+
                                 <div className={style.imgWrapper} id={theme === 'light' ? style.lightImgWrapper : ''}>
                                     <div className={style.imgLogoContnet} id={theme === 'light' ? style.lightImgLogoContnet : ''}>
                                         <img src={dragon} alt="logoIcon" className={style.dragonIcon} />
@@ -76,7 +73,7 @@ export const AboutMePage = () => {
 
                                         <div className={style.mottoBody}>
                                             <p className={style.paragraphMotto} id={theme === 'light' ? style.lightParagraphMotto : ''}>My motto</p>
-                                            <p className={style.motto} id={theme === 'light' ? style.lightMotto : ''}>If no one could do it,I will be the first one to pull that off.</p>
+                                            <p className={style.motto} id={theme === 'light' ? style.lightMotto : ''}>If no one could do it, I will be the first one to pull that off.</p>
 
                                         </div>
 

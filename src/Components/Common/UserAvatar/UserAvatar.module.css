@@ -108,14 +108,15 @@
     }
 }
 
-@media screen and (max-height: 704px) {
-.ripple {
 
+@media(max-height:704px) {
+    .ripple {
         min-height: 145px;
         min-width: 145px;
 
     }
 }
+
 
 
 

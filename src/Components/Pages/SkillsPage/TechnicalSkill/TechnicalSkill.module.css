@@ -109,8 +109,8 @@
 
 @media screen and (max-height:704px) {
     .iconWrapper {
-            min-width: 26px;
-            min-height: 26px;
+            min-width: 28px;
+            min-height: 28px;
             margin-right: 5px;
     }
 }
