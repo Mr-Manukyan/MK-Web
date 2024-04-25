@@ -84,13 +84,13 @@
     }
 
     .iconWrapper {
-        min-width: 35px;
-        min-height: 35px;
+        min-width: 45px;
+        min-height: 45px;
     }
 
     .icon {
-        width: 30px;
-        height: 30px;
+        width: 35px;
+        height: 35px;
     }
 
     .info {
@@ -179,6 +179,18 @@
         font-weight: 500;
         margin-left: 15px;
     }
+}
+
+@media screen and (max-height:704px) {
+    .iconWrapper {
+            min-width: 35px;
+            min-height: 35px;
+        }
+    
+        .icon {
+            width: 30px;
+            height: 30px;
+        }
 }
 
 
