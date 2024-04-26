@@ -88,3 +88,15 @@ ul {
     }
 }
 
+@media screen and (max-width:376px) and (max-height:668px) {
+    .navNenuContainer {
+          
+            min-height: 70vh;
+            top: 13.5vh;
+            left: -100%;
+            padding: 20px;
+            border-radius: 18px;
+          
+        }
+}
+

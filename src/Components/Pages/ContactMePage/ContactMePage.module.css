@@ -217,6 +217,53 @@
 
 }
 
+@media screen and (max-height:704px) {
+    .contentContainer {
+        width: 97%;
+        height: 88%;
+    }
+
+    .contentWrapper {
+        height: 78%;
+    }
+
+    .contactParagraph {
+        padding: 10px 25px;
+        font-size: 20px;
+        border-radius: 5px;
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
+
+    .info {
+        font-size: calc(15px + 3 * ((100vw - 320px) / (1280 - 320)));
+        letter-spacing: 2px;
+        padding-bottom: 5px;
+        margin: 5px 0px;
+    }
+
+    .wrapper {
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (max-width:541px) and (max-height:721px) {
+    .content {
+    
+            height: 55%;
+            border-radius: 10px;
+        }
+    
+        .robotWrapper {
+            height: 35%;
+        }
+                .robot {
+                    max-width: 80%;
+                    min-width: 80px;
+                    max-height: 90%;
+                    object-fit: cover;
+                }
+}
 
 @media screen and (max-width:449px) {
 
@@ -232,32 +279,49 @@
 
 }
 
-@media screen and (max-height:704px) {
-    .contentContainer {
-            width: 97%;
-            height: 88%;
-    }
-    .contentWrapper{
-        height: 78%;
-    }
-    .contactParagraph {
-            padding: 10px 25px;
-            font-size: 20px;
-            border-radius: 5px;
-            margin-top: 10px;
-            margin-bottom: 0px;
+@media screen and (max-width:376px) {
+
+.content {
+     
+            height: 55%;
+            border-radius: 10px;
+        }
+    
+.robotWrapper {
+            height: 35%;
         }
 
-        .info {
-        font-size: calc(15px + 3 * ((100vw - 320px) / (1280 - 320)));
-        letter-spacing: 2px;
-        padding-bottom: 5px;
-        margin: 5px 0px;
+.robot {
+        max-width: 80%;
+        min-width: 80px;
+        max-height: 90%;
+        object-fit: cover;
     }
-    .wrapper{
-        justify-content: space-evenly;
-    }
+
 }
+
+@media screen and (max-width:345px) {
+
+    .content {
+
+        height: 45%;
+        border-radius: 10px;
+    }
+
+    .robotWrapper {
+        height: 45%;
+    }
+
+    .robot {
+        max-width: 80%;
+        min-width: 80px;
+        max-height: 80%;
+        object-fit: cover;
+    }
+
+}
+
+
 
   
 
