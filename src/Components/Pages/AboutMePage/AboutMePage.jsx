@@ -62,25 +62,27 @@ export const AboutMePage = () => {
 
                                         <p className={style.message} id={theme === 'light' ? style.lightMessage : ''}>
 
-                                            I am an avid fan of discovering new avenues for
-                                            my professional growth, consequently I'm
-                                            stillself studying and improving my skills on my
-                                            own.
-                                            . I understand very wellthe interactions between
-                                            the front end backend and the database.
-                                            . I'm a quick learner and I accept challenges in
-                                            any area and handle them very well due to my
-                                            good problem solving skills, that's the reason
-                                            hidden behind the factthatI manoeuvre in case of
-                                            errors in the codes quickly.
-                                            .I'm looking for a good professional
-                                            environmentto thrive in ))).
-                                            at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words,
-                                            consectetur, from a Lorem Ipsum passage, and going through the cites of the word in
-                                            classical literature, discovered the undoubtable source.
-                                            Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum
-                                            et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC.
-                                            This book is a treatise on the theory of ethics, very popular during the Renaissance.
+                                            Hi !
+
+                                            Let me briefly introduce myself and explain why I have chosen this path, why I enjoy it,
+                                            and why I believe I deserve a chance. <span>About myself</span> - At 35 years old, after exploring various fields,
+                                            I aimed to find a job that would become a beloved pursuit,
+                                            where time would flow seamlessly, making life brighter and more joyful.
+                                            Traveling through different domains, I witnessed, heard,
+                                            and felt much that led me to programming. <span>Why this path?</span> - In search of answers, I turned to the lessons life has taught me.
+                                            When we leverage our strengths and improve our weaknesses,
+                                            we can achieve outstanding results. I realized the importance of utilizing my strengths.
+                                            I grew up on fantasy movies, was fascinated by computers and complex logic games,
+                                            and my legal knowledge enables me to understand human psychology, and so forth.
+                                            <span> Why I enjoy programming</span> - Programming is not just a job for me; it's a way to find solutions, a reflection of
+                                            the world through the lens of code, where every problem has its solution.
+                                            It not only helps solve tasks but also shapes the ability to find optimal paths in life.
+                                            The virtual world that can be created relying solely on imagination and knowledge inspires me. <span>Why I deserve a chance?</span> - Well, because everyone deserves it<span className={style.smiley}>😊</span>. But on a serious note,
+                                            I am not just studying Frontend, Backend, and databases,
+                                            but also aspire to communicate with experienced professionals ready
+                                            to share their knowledge and become good friends. I am driven, ready
+                                            to continue evolving and achieving goals, and I believe that together we can accomplish more.
+                                            Thank you for your attention, and I look forward to our future collaboration. <span>Best regards` M.K.</span>
                                         </p>
                                     </div>
                                 </div>
