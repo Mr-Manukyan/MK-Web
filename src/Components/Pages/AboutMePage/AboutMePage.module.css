@@ -442,6 +442,30 @@
     .mottoBody {
         margin-bottom: 2%;
     }
+    .messageMain{
+            margin-bottom: 30px;
+    }
+
+         .imgWrapper {
+             top: -35px;
+             left: 40px;
+             width: 100px;
+             height: 100px;
+         }
+    
+         .imgUserContnet {
+             width: 90px;
+             height: 90px;
+         }
+    
+         .imgLogoContnet {
+             width: 90px;
+             height: 90px;
+         }
+    
+         .message {
+             font-size: 14.5px;
+         }
 }
 
 
@@ -633,26 +657,24 @@
     }
 
         .imgWrapper {
-            top: -50px;
-            width: 80px;
-            height: 80px;
+            top: -32px;
+            width: 70px;
+            height: 70px;
         }
     
         .imgUserContnet {
-            width: 70px;
-            height: 70px;
+            width: 65px;
+            height: 65px;
         }
     
         .imgLogoContnet {
-            width: 70px;
-            height: 70px;
+            width: 65px;
+            height: 65px;
         }
         .message {
             font-size: 8px;
         }
-        .imgWrapper{
-            top : -32px
-        }
+     
 }
 
 @media screen and (max-width:368px) {
