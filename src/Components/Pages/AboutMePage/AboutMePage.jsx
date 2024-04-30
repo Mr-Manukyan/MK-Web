@@ -7,25 +7,19 @@ import userIcon from '../../../Assets/icons/user.png'
 import { useTheme } from '../../../Hooks/hooks'
 import style from './AboutMePage.module.css'
 
-const rotateAnimeRight = {
+const anime = {
     initial: {
-        x: '-100%'
+        opacity: 0,
+        scale: 0.2
     },
     animate: {
-        x: 0
+        opacity: 1,
+        scale: 1
     },
 
 }
 
-const rotateAnimeLeft = {
-    initial: {
-        x: '100%'
-    },
-    animate: {
-        x: 0
-    },
 
-}
 
 export const AboutMePage = () => {
     const { theme, lightColor } = useTheme()
@@ -49,7 +43,7 @@ export const AboutMePage = () => {
                                         initial='initial'
                                         whileInView='animate'
                                         viewport={{ amount: 0.5 }}
-                                        variants={rotateAnimeRight}
+                                        variants={anime}
                                         transition={{ duration: 0.7, delay: 0.2 }}
                                     >
                                         <div className={style.imgUserContnet} id={theme === 'light' ? style.lightImgUserContnet : ''} >
@@ -95,7 +89,7 @@ export const AboutMePage = () => {
                                         initial='initial'
                                         whileInView='animate'
                                         viewport={{ amount: 0.5 }}
-                                        variants={rotateAnimeLeft}
+                                        variants={anime}
                                         transition={{ duration: 0.7, delay: 0.2 }}
                                     >
                                         <div className={style.imgLogoContnet} id={theme === 'light' ? style.lightImgLogoContnet : ''}>

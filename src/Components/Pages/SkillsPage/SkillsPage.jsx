@@ -23,7 +23,7 @@ export const SkillsPage = () => {
                     }
                 }>
                     <div className={style.skillsParagraphWrapper}>
-                        <h3 className={style.skillsParagraph} id={theme === 'light' ? style.light : ''}>MY SKILLS</h3>
+                        <h3 className={style.skillsParagraph} id={theme === 'light' ? style.light : ''}>My Skills</h3>
                     </div>
                     <div className={style.skillsContentWrapper}>
                         <div className={style.skillsContent}>

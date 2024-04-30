@@ -39,14 +39,13 @@
     font-family: 'Poppins', sans-serif;
     color: #222222;
     letter-spacing: 3px;
-    font-weight: 700;
     text-shadow:
         -1px -1px 2px #ffffff,
         1px 1px 2px #0e0e0e;
     box-shadow: inset 5px 5px 10px #0e0e0e, inset -5px -5px 10px #363636;
-    font-family: "Rubik Moonrocks", sans-serif;
-        font-weight: 400;
-        font-style: italic;
+    font-family: "Trade Winds", system-ui;
+    font-weight: 400;
+    font-style: normal;
   
 
 }
